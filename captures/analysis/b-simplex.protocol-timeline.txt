@@ -1,0 +1,616 @@
+   0.000  STD  bmR=80 bReq=6 wVal=0100                 
+   0.000  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.216  STD  bmR=80 bReq=8 wVal=0000                 
+   5.217  STD  bmR=80 bReq=6 wVal=0100                 
+   5.217  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.217  STD  bmR=00 bReq=9 wVal=0001                 
+   5.218  STD  bmR=80 bReq=6 wVal=0100                 
+   5.218  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.219  STD  bmR=80 bReq=6 wVal=0100                 
+   5.219  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.219  STD  bmR=80 bReq=6 wVal=0100                 
+   5.219  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.220  STD  bmR=80 bReq=6 wVal=0301                 
+   5.220  STD  bmR=80 bReq=6 wVal=0302                 
+   5.220  STD  bmR=80 bReq=6 wVal=0303                 
+   5.231  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 7c 3f 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 2 more time(s)
+   5.234  IN   req=02 val=0000 idx=0000 len=56          | 00 04 01 0d 00 04 01 0e 00 01 02 0f 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00...
+   5.235  IN   req=34 val=0000 idx=0000 len=55          | 04 0a 60 1d 00 03 00 4b 4f 44 41 4b 20 20 20 20 20 00 00 00 00 00 00 69 32 36 30 30 20 53 43 41 4e 4e 45 52 00 00 00 00 00 00 00 00 00 00 00 00...
+   5.245  IN   req=36 val=0000 idx=0000 len=16          | 30 30 30 30 30 30 30 30 34 38 37 38 35 39 34 32
+   5.249  IN   req=37 val=0000 idx=0000 len=64          | 01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06 12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72 12 fb 67 6f 12 fb 67 6f a9 88 20 a2 a9 88 20 a2...
+   5.250  OUT  req=1f val=3086 idx=8879 len=0          
+   5.252  IN   req=03 val=0000 idx=0000 len=32          | 98 66 84 03 77 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   5.253  IN   req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+   5.271  OUT  req=a3 val=da27 idx=0000 len=4           | 00 00 00 01
+   5.272  OUT  req=a3 val=db27 idx=0000 len=4           | 00 00 00 01
+   5.273  IN   req=e3 val=0003 idx=fc00 len=256         | aa 03 b5 00 85 00 c6 00 00 00 00 00 00 00 bc 00 8d 00 c9 00 00 00 00 00 00 00 a7 00 a7 00 00 00 00 00 aa 00 aa 00 00 00 00 00 b7 00 88 00 c8 00...
+   5.286  IN   req=37 val=0000 idx=0000 len=64          | 01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06 12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72 12 fb 67 6f 12 fb 67 6f a9 88 20 a2 a9 88 20 a2...
+        ... previous repeated 1 more time(s)
+   5.289  IN   req=a3 val=d901 idx=0000 len=1           | 24
+   5.290  OUT  req=a3 val=d901 idx=0000 len=1           | 20
+   5.311  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   5.313  IN   req=e0 val=001f idx=0000 len=1           | 00
+   5.314  OUT  req=e0 val=0002 idx=0000 len=1           | 20
+   5.315  OUT  req=e0 val=001f idx=0000 len=1           | 02
+        ... previous repeated 1 more time(s)
+   5.318  IN   req=e0 val=001f idx=0000 len=1           | 02
+   5.319  OUT  req=e0 val=0005 idx=0000 len=1           | 00
+   5.320  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.323  IN   req=e0 val=001f idx=0000 len=1           | 03
+   5.324  OUT  req=e0 val=0000 idx=0000 len=1           | 88
+   5.325  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.328  IN   req=e0 val=001f idx=0000 len=1           | 03
+   5.329  OUT  req=e0 val=0001 idx=0000 len=1           | 88
+   5.330  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.333  IN   req=e0 val=001f idx=0000 len=1           | 03
+   5.334  OUT  req=e0 val=0002 idx=0000 len=1           | 88
+   5.335  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.338  IN   req=e0 val=001f idx=0000 len=1           | 03
+   5.339  OUT  req=e0 val=0003 idx=0000 len=1           | 88
+   5.341  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.343  IN   req=e0 val=001f idx=0000 len=1           | 03
+   5.344  OUT  req=e0 val=0004 idx=0000 len=1           | 88
+   5.346  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   5.348  IN   req=e0 val=001f idx=0001 len=1           | 00
+   5.349  OUT  req=e0 val=0002 idx=0001 len=1           | 20
+   5.351  OUT  req=e0 val=001f idx=0001 len=1           | 02
+        ... previous repeated 1 more time(s)
+   5.353  IN   req=e0 val=001f idx=0001 len=1           | 02
+   5.354  OUT  req=e0 val=0005 idx=0001 len=1           | 00
+   5.356  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.358  IN   req=e0 val=001f idx=0001 len=1           | 03
+   5.360  OUT  req=e0 val=0000 idx=0001 len=1           | 88
+   5.361  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.363  IN   req=e0 val=001f idx=0001 len=1           | 03
+   5.365  OUT  req=e0 val=0001 idx=0001 len=1           | 88
+   5.366  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.368  IN   req=e0 val=001f idx=0001 len=1           | 03
+   5.370  OUT  req=e0 val=0002 idx=0001 len=1           | 88
+   5.371  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.373  IN   req=e0 val=001f idx=0001 len=1           | 03
+   5.375  OUT  req=e0 val=0003 idx=0001 len=1           | 88
+   5.376  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   5.378  IN   req=e0 val=001f idx=0001 len=1           | 03
+   5.380  OUT  req=e0 val=0004 idx=0001 len=1           | 88
+   5.381  OUT  req=a3 val=d901 idx=0000 len=1           | 24
+   5.402  IN   req=45 val=0000 idx=0000 len=3           | 02 00 00
+   5.402  OUT  req=11 val=0000 idx=0000 len=0          
+   5.404  IN   req=32 val=0000 idx=0000 len=2           | 0e 3c
+   5.416  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 35 40 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.439  OUT  req=62 val=0104 idx=0680 len=768         | 00 c0 40 40 40 40 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00...
+   5.448  OUT  req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+   5.470  OUT  req=16 val=0009 idx=01ff len=0          
+   5.470  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 6c 40 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.482  IN   req=a3 val=de37 idx=0000 len=1           | 00
+   5.590  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 e2 40 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 1 more time(s)
+   5.592  IN   req=33 val=0000 idx=0000 len=20          | f5 c4 06 00 5a 1c 0b 00 5a 1c 0b 00 7e 03 58 00 6e 6b 09 00
+   5.593  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 e6 40 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 3 more time(s)
+   5.598  IN   req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+   5.616  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 fc 40 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.617  IN   req=35 val=0001 idx=0000 len=256         | ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff...
+   5.662  STD  bmR=80 bReq=6 wVal=0100                 
+   5.662  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.663  STD  bmR=80 bReq=6 wVal=0100                 
+   5.663  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.664  STD  bmR=80 bReq=6 wVal=0100                 
+   5.664  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.665  STD  bmR=80 bReq=6 wVal=0100                 
+   5.665  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.666  STD  bmR=80 bReq=6 wVal=0100                 
+   5.666  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.667  STD  bmR=80 bReq=6 wVal=0100                 
+   5.667  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.668  STD  bmR=80 bReq=6 wVal=0100                 
+   5.668  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.669  STD  bmR=80 bReq=6 wVal=0100                 
+   5.669  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.670  STD  bmR=80 bReq=6 wVal=0100                 
+   5.670  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.671  STD  bmR=80 bReq=6 wVal=0100                 
+   5.671  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.672  STD  bmR=80 bReq=6 wVal=0100                 
+   5.673  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.674  STD  bmR=80 bReq=6 wVal=0100                 
+   5.674  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.675  STD  bmR=80 bReq=6 wVal=0100                 
+   5.675  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.676  STD  bmR=80 bReq=6 wVal=0100                 
+   5.676  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.677  STD  bmR=80 bReq=6 wVal=0100                 
+   5.677  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.678  STD  bmR=80 bReq=6 wVal=0100                 
+   5.678  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.679  STD  bmR=80 bReq=6 wVal=0100                 
+   5.679  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.679  STD  bmR=80 bReq=6 wVal=0100                 
+   5.680  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.680  STD  bmR=80 bReq=6 wVal=0100                 
+   5.681  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.681  STD  bmR=80 bReq=6 wVal=0100                 
+   5.681  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.682  STD  bmR=80 bReq=6 wVal=0100                 
+   5.682  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.683  STD  bmR=80 bReq=6 wVal=0100                 
+   5.683  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.684  STD  bmR=80 bReq=6 wVal=0100                 
+   5.684  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.685  STD  bmR=80 bReq=6 wVal=0100                 
+   5.685  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.687  STD  bmR=80 bReq=6 wVal=0100                 
+   5.687  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.687  STD  bmR=80 bReq=6 wVal=0100                 
+   5.688  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.688  STD  bmR=80 bReq=6 wVal=0100                 
+   5.689  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.689  STD  bmR=80 bReq=6 wVal=0100                 
+   5.690  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.690  STD  bmR=80 bReq=6 wVal=0100                 
+   5.691  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.691  STD  bmR=80 bReq=6 wVal=0100                 
+   5.691  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.692  STD  bmR=80 bReq=6 wVal=0100                 
+   5.692  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.693  STD  bmR=80 bReq=6 wVal=0100                 
+   5.693  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.694  STD  bmR=80 bReq=6 wVal=0100                 
+   5.694  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.695  STD  bmR=80 bReq=6 wVal=0100                 
+   5.695  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.696  STD  bmR=80 bReq=6 wVal=0100                 
+   5.696  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.697  STD  bmR=80 bReq=6 wVal=0100                 
+   5.697  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.698  STD  bmR=80 bReq=6 wVal=0100                 
+   5.698  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.699  STD  bmR=80 bReq=6 wVal=0100                 
+   5.699  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.700  STD  bmR=80 bReq=6 wVal=0100                 
+   5.700  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.701  STD  bmR=80 bReq=6 wVal=0100                 
+   5.701  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.702  STD  bmR=80 bReq=6 wVal=0100                 
+   5.702  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.703  STD  bmR=80 bReq=6 wVal=0100                 
+   5.703  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.704  STD  bmR=80 bReq=6 wVal=0100                 
+   5.704  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.705  STD  bmR=80 bReq=6 wVal=0100                 
+   5.705  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.705  STD  bmR=80 bReq=6 wVal=0100                 
+   5.706  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.706  STD  bmR=80 bReq=6 wVal=0100                 
+   5.707  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.708  STD  bmR=80 bReq=6 wVal=0100                 
+   5.708  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.709  STD  bmR=80 bReq=6 wVal=0100                 
+   5.709  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.710  STD  bmR=80 bReq=6 wVal=0100                 
+   5.711  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.711  STD  bmR=80 bReq=6 wVal=0100                 
+   5.711  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.712  STD  bmR=80 bReq=6 wVal=0100                 
+   5.712  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.713  STD  bmR=80 bReq=6 wVal=0100                 
+   5.713  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.714  STD  bmR=80 bReq=6 wVal=0100                 
+   5.714  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.715  STD  bmR=80 bReq=6 wVal=0100                 
+   5.715  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.716  STD  bmR=80 bReq=6 wVal=0100                 
+   5.716  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.717  STD  bmR=80 bReq=6 wVal=0100                 
+   5.717  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.718  STD  bmR=80 bReq=6 wVal=0100                 
+   5.718  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.719  STD  bmR=80 bReq=6 wVal=0100                 
+   5.719  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.720  STD  bmR=80 bReq=6 wVal=0100                 
+   5.720  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.721  STD  bmR=80 bReq=6 wVal=0100                 
+   5.721  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.722  STD  bmR=80 bReq=6 wVal=0100                 
+   5.722  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.723  STD  bmR=80 bReq=6 wVal=0100                 
+   5.723  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.724  STD  bmR=80 bReq=6 wVal=0100                 
+   5.724  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.725  STD  bmR=80 bReq=6 wVal=0100                 
+   5.725  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.726  STD  bmR=80 bReq=6 wVal=0100                 
+   5.726  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.727  STD  bmR=80 bReq=6 wVal=0100                 
+   5.727  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.728  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 6b 41 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 1 more time(s)
+   5.730  STD  bmR=80 bReq=6 wVal=0100                 
+   5.730  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.731  STD  bmR=80 bReq=6 wVal=0100                 
+   5.731  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.732  STD  bmR=80 bReq=6 wVal=0100                 
+   5.732  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.733  STD  bmR=80 bReq=6 wVal=0100                 
+   5.733  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.734  STD  bmR=80 bReq=6 wVal=0100                 
+   5.734  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.735  STD  bmR=80 bReq=6 wVal=0100                 
+   5.735  STD  bmR=80 bReq=6 wVal=0200                 
+        ... previous repeated 1 more time(s)
+   5.736  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 74 41 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.741  OUT  req=62 val=0104 idx=0680 len=768         | 00 c0 40 40 40 40 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00...
+   5.750  OUT  req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+   5.772  OUT  req=3a val=0001 idx=0001 len=0          
+   5.773  OUT  req=1b val=0000 idx=0000 len=0          
+   5.776  INTR ep 0x88                                  | 01 00 00 00 00 00 00 00
+   5.777  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 9d 41 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.840  INTR ep 0x88                                  | 15 00 00 00 00 00 00 00
+   5.904  INTR ep 0x88                                  | 03 00 01 00 00 00 00 00
+   5.968  INTR ep 0x88                                  | 03 00 02 00 00 00 00 00
+   5.970  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 5d 42 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 2 more time(s)
+   5.975  IN   req=32 val=0000 idx=0000 len=2           | 0e 3c
+   5.976  OUT  req=32 val=0000 idx=0000 len=2           | 0e 3c
+   5.977  OUT  req=31 val=0000 idx=0000 len=1           | 01
+   5.980  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 6a 42 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   5.984  IN   req=32 val=0000 idx=0000 len=2           | 0e 3c
+   5.984  OUT  req=32 val=0000 idx=0000 len=2           | 0e 3c
+   5.985  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 70 42 1b 00 03 01 00 02 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 5 more time(s)
+   6.012  OUT  req=11 val=0001 idx=0000 len=0          
+   6.014  OUT  req=45 val=0000 idx=0000 len=3           | 01 00 02
+   6.015  IN   req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+   6.034  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 9e 42 1b 00 03 01 00 02 02 01 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+   6.035  OUT  req=11 val=0001 idx=0000 len=0          
+   6.037  IN   req=a3 val=da27 idx=0000 len=4           | 00 00 00 01
+   6.038  IN   req=a3 val=db27 idx=0000 len=4           | 00 00 00 01
+   6.039  OUT  req=a3 val=da27 idx=0000 len=4           | 00 00 00 01
+   6.040  OUT  req=a3 val=db27 idx=0000 len=4           | 00 00 00 01
+   6.041  IN   req=37 val=0000 idx=0000 len=64          | 01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06 12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72 12 fb 67 6f 12 fb 67 6f a9 88 20 a2 a9 88 20 a2...
+   6.043  OUT  req=37 val=0000 idx=0000 len=64          | 01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06 12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72 12 fb 67 6f 12 fb 67 6f a9 88 20 a2 a9 88 20 a2...
+   6.044  OUT  req=a3 val=d900 idx=0000 len=1           | 01
+   6.045  IN   req=a3 val=d901 idx=0000 len=1           | 24
+   6.046  OUT  req=a3 val=d901 idx=0000 len=1           | 20
+        ... previous repeated 1 more time(s)
+   6.087  OUT  req=a3 val=d903 idx=0000 len=1           | 00
+   6.088  OUT  req=a3 val=d904 idx=0000 len=1           | 00
+   6.089  OUT  req=a3 val=d905 idx=0000 len=1           | 07
+   6.090  OUT  req=a3 val=d906 idx=0000 len=1           | 04
+   6.091  OUT  req=a3 val=d907 idx=0000 len=1           | 28
+   6.092  OUT  req=a3 val=d920 idx=0000 len=1           | 22
+   6.093  OUT  req=a3 val=dc00 idx=0000 len=78          | 01 f8 00 00 00 00 00 00 00 00 00 00 00 9f c4 01 f4 00 00 00 00 00 00 00 00 00 00 02 97 c4 03 ec 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00...
+   6.094  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.097  IN   req=e0 val=001f idx=0000 len=1           | 00
+   6.098  OUT  req=e0 val=0002 idx=0000 len=1           | 20
+   6.100  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.102  IN   req=e0 val=001f idx=0001 len=1           | 00
+   6.104  OUT  req=e0 val=0002 idx=0001 len=1           | 20
+   6.105  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.108  IN   req=e0 val=001f idx=0001 len=1           | 00
+   6.109  OUT  req=e0 val=0000 idx=0001 len=32          | 91 55 20 07 00 00 00 20 11 44 1e 00 08 08 08 13 13 13 00 00 00 00 00 00 00 00 00 00 00 00 04 00
+   6.116  OUT  req=e0 val=001f idx=0001 len=1           | 01
+        ... previous repeated 1 more time(s)
+   6.118  IN   req=e0 val=001f idx=0001 len=1           | 01
+   6.120  OUT  req=e0 val=0000 idx=0001 len=32          | 54 54 54 54 54 80 00 80 00 80 00 80 00 80 00 40 40 40 40 40 00 00 00 00 00 00 40 40 40 40 40 00
+   6.126  OUT  req=e0 val=001f idx=0001 len=1           | 02
+        ... previous repeated 1 more time(s)
+   6.129  IN   req=e0 val=001f idx=0001 len=1           | 02
+   6.130  OUT  req=e0 val=0000 idx=0001 len=32          | 30 00 c8 c8 80 00 00 00 0e 00 01 0d 00 00 0c 00 0c 0f 00 12 18 00 00 00 00 00 00 00 00 00 00 00
+   6.137  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+   6.139  IN   req=e0 val=001f idx=0001 len=1           | 03
+   6.141  OUT  req=e0 val=0000 idx=0001 len=32          | a0 34 91 29 9a 61 18 18 18 18 18 00 01 00 0c 00 00 00 00 00 13 03 30 00 14 03 30 00 15 03 30 00
+   6.147  OUT  req=e0 val=001f idx=0001 len=1           | 04
+        ... previous repeated 1 more time(s)
+   6.150  IN   req=e0 val=001f idx=0001 len=1           | 04
+   6.151  OUT  req=e0 val=0000 idx=0001 len=32          | 00 00 00 00 45 51 00 57 0a c5 0a ce ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   6.158  OUT  req=e0 val=001f idx=0001 len=1           | 05
+        ... previous repeated 1 more time(s)
+   6.160  IN   req=e0 val=001f idx=0001 len=1           | 05
+   6.162  OUT  req=e0 val=0000 idx=0001 len=32          | 3e 00 3e 00 3e 00 3d 01 3d 01 0f 00 0f 07 0f 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   6.168  OUT  req=e0 val=001f idx=0001 len=1           | 06
+        ... previous repeated 1 more time(s)
+   6.171  IN   req=e0 val=001f idx=0001 len=1           | 06
+   6.172  OUT  req=e0 val=0001 idx=0001 len=1           | 22
+   6.174  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.176  IN   req=e0 val=001f idx=0001 len=1           | 00
+   6.178  OUT  req=e0 val=0002 idx=0001 len=1           | 28
+   6.179  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.182  IN   req=e0 val=001f idx=0001 len=1           | 00
+   6.183  OUT  req=e0 val=0002 idx=0001 len=1           | 08
+   6.185  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.187  IN   req=e0 val=001f idx=0001 len=1           | 00
+   6.189  OUT  req=e0 val=0002 idx=0001 len=1           | 19
+   6.190  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.193  IN   req=e0 val=001f idx=0000 len=1           | 00
+   6.194  OUT  req=e0 val=0000 idx=0000 len=32          | 91 55 20 07 00 00 00 20 11 44 1e 00 08 08 08 13 13 13 00 00 00 00 00 00 00 00 00 00 00 00 04 00
+   6.200  OUT  req=e0 val=001f idx=0000 len=1           | 01
+        ... previous repeated 1 more time(s)
+   6.203  IN   req=e0 val=001f idx=0000 len=1           | 01
+   6.205  OUT  req=e0 val=0000 idx=0000 len=32          | 54 54 54 54 54 80 00 80 00 80 00 80 00 80 00 40 40 40 40 40 00 00 00 00 00 00 40 40 40 40 40 00
+   6.211  OUT  req=e0 val=001f idx=0000 len=1           | 02
+        ... previous repeated 1 more time(s)
+   6.214  IN   req=e0 val=001f idx=0000 len=1           | 02
+   6.215  OUT  req=e0 val=0000 idx=0000 len=32          | 70 00 c8 c8 80 00 00 00 0e 00 01 0d 00 00 0c 00 0c 0f 00 12 18 00 00 00 00 00 00 00 00 00 00 00
+   6.221  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+   6.224  IN   req=e0 val=001f idx=0000 len=1           | 03
+   6.226  OUT  req=e0 val=0000 idx=0000 len=32          | a0 34 91 29 9a 61 18 18 18 18 18 00 01 00 0c 00 00 00 00 00 13 03 30 00 14 03 30 00 15 03 30 00
+   6.232  OUT  req=e0 val=001f idx=0000 len=1           | 04
+        ... previous repeated 1 more time(s)
+   6.235  IN   req=e0 val=001f idx=0000 len=1           | 04
+   6.236  OUT  req=e0 val=0000 idx=0000 len=32          | 00 00 00 00 45 51 00 57 0a c5 0a ce ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   6.243  OUT  req=e0 val=001f idx=0000 len=1           | 05
+        ... previous repeated 1 more time(s)
+   6.245  IN   req=e0 val=001f idx=0000 len=1           | 05
+   6.247  OUT  req=e0 val=0000 idx=0000 len=32          | 3e 00 3e 00 3e 00 3d 01 3d 01 0f 00 0f 07 0f 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   6.253  OUT  req=e0 val=001f idx=0000 len=1           | 06
+        ... previous repeated 1 more time(s)
+   6.256  IN   req=e0 val=001f idx=0000 len=1           | 06
+   6.257  OUT  req=e0 val=0001 idx=0000 len=1           | 22
+   6.259  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.261  IN   req=e0 val=001f idx=0000 len=1           | 00
+   6.263  OUT  req=e0 val=0002 idx=0000 len=1           | 28
+   6.264  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.267  IN   req=e0 val=001f idx=0000 len=1           | 00
+   6.268  OUT  req=e0 val=0002 idx=0000 len=1           | 08
+   6.270  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+   6.272  IN   req=e0 val=001f idx=0000 len=1           | 00
+   6.274  OUT  req=e0 val=0002 idx=0000 len=1           | 19
+   6.275  OUT  req=e0 val=001f idx=0000 len=1           | 01
+        ... previous repeated 1 more time(s)
+   6.278  IN   req=e0 val=001f idx=0000 len=1           | 01
+   6.279  OUT  req=e0 val=0000 idx=0000 len=3           | 00 a7 a7
+   6.381  OUT  req=e0 val=001f idx=0000 len=1           | 01
+   6.382  IN   req=e0 val=0000 idx=0000 len=3           | 00 a7 a7
+   6.384  OUT  req=e0 val=001f idx=0001 len=1           | 01
+        ... previous repeated 1 more time(s)
+   6.386  IN   req=e0 val=001f idx=0001 len=1           | 01
+   6.388  OUT  req=e0 val=0000 idx=0001 len=3           | 00 aa aa
+   6.489  OUT  req=e0 val=001f idx=0001 len=1           | 01
+   6.490  IN   req=e0 val=0000 idx=0001 len=3           | 00 aa aa
+   6.492  OUT  req=a3 val=da06 idx=0000 len=1           | 00
+   6.493  OUT  req=a3 val=da07 idx=0000 len=1           | 14
+   6.494  OUT  req=a3 val=da2b idx=0000 len=1           | 00
+   6.495  OUT  req=a3 val=da04 idx=0000 len=1           | 05
+   6.496  OUT  req=a3 val=da05 idx=0000 len=1           | 0a
+   6.497  OUT  req=a3 val=da08 idx=0000 len=1           | 00
+   6.498  OUT  req=a3 val=da09 idx=0000 len=1           | 04
+   6.499  OUT  req=a3 val=da01 idx=0000 len=1           | 00
+   6.500  OUT  req=a3 val=da25 idx=0000 len=1           | 01
+   6.501  OUT  req=a3 val=da0c idx=0000 len=1           | 00
+   6.502  OUT  req=a3 val=da0d idx=0000 len=1           | 14
+   6.503  OUT  req=a3 val=da0a idx=0000 len=1           | 05
+   6.504  OUT  req=a3 val=da0b idx=0000 len=1           | 0a
+   6.505  OUT  req=a3 val=da02 idx=0000 len=1           | 00
+   6.506  OUT  req=a3 val=da03 idx=0000 len=1           | 04
+   6.507  OUT  req=a3 val=da11 idx=0000 len=1           | 01
+   6.508  OUT  req=a3 val=da12 idx=0000 len=1           | 41
+   6.509  OUT  req=a3 val=d901 idx=0000 len=1           | 28
+   6.610  IN   req=a3 val=da11 idx=0000 len=1           | 01
+   6.610  IN   req=a3 val=da12 idx=0000 len=1           | 41
+   6.611  IN   req=a3 val=da13 idx=0000 len=1           | 01
+   6.612  IN   req=a3 val=da14 idx=0000 len=1           | 40
+   6.613  IN   req=a3 val=da15 idx=0000 len=1           | 01
+   6.614  IN   req=a3 val=da16 idx=0000 len=1           | 4b
+   6.615  IN   req=a3 val=da19 idx=0000 len=1           | 01
+   6.616  IN   req=a3 val=da1a idx=0000 len=1           | 3e
+   6.617  IN   req=a3 val=da19 idx=0000 len=1           | 01
+   6.618  IN   req=a3 val=da1a idx=0000 len=1           | 43
+   6.619  IN   req=a3 val=da19 idx=0000 len=1           | 01
+   6.620  IN   req=a3 val=da1a idx=0000 len=1           | 41
+   6.621  OUT  req=a3 val=dd0b idx=0000 len=1           | 46
+   6.622  IN   req=a3 val=dd0a idx=0000 len=1           | 40
+   6.623  OUT  req=a3 val=dd0a idx=0000 len=1           | 40
+   6.624  OUT  req=30 val=0000 idx=0000 len=120         | 00 00 01 00 00 00 5d 0e 00 00 6a 08 00 85 03 75 01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00...
+   6.627  OUT  req=10 val=0001 idx=0000 len=0          
+   6.736  INTR ep 0x88                                  | 10 00 04 00 00 00 00 00
+   6.800  INTR ep 0x88                                  | 02 00 00 00 00 00 00 00
+   6.801  OUT  req=17 val=0001 idx=0000 len=0          
+   6.802  BULK ep 0x82  4 xfers, 51824 B, until t=6.805
+   6.805  OUT  req=10 val=0000 idx=0000 len=0          
+   6.864  INTR ep 0x88                                  | 42 00 00 00 01 00 00 00
+   6.928  INTR ep 0x88                                  | 01 00 00 00 00 00 00 00
+   6.929  OUT  req=a3 val=da0e idx=0000 len=1           | 12
+   6.929  OUT  req=a3 val=da06 idx=0000 len=1           | 12
+   6.930  OUT  req=a3 val=da07 idx=0000 len=1           | 2a
+   6.931  OUT  req=30 val=0000 idx=0000 len=120         | 00 01 00 00 00 00 5d 0e 00 00 6a 08 00 85 03 75 01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00 04 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00...
+   6.933  OUT  req=10 val=0001 idx=0000 len=0          
+   6.992  INTR ep 0x88                                  | 10 00 03 00 00 00 00 00
+   7.056  INTR ep 0x88                                  | 60 00 09 01 00 00 00 00
+   7.120  INTR ep 0x88                                  | 10 00 04 00 00 00 00 00
+   7.184  INTR ep 0x88                                  | 12 00 01 00 00 00 00 00
+   8.400  INTR ep 0x88                                  | 12 00 02 00 00 00 00 00
+   8.464  INTR ep 0x88                                  | 02 00 00 00 00 00 00 00
+   8.641  BULK ep 0x82  637 xfers, 10421120 B, until t=9.440
+   9.489  INTR ep 0x88                                  | 42 00 00 00 02 00 00 00
+   9.552  INTR ep 0x88                                  | 41 01 00 00 00 00 00 00
+   9.826  BULK ep 0x82  642 xfers, 10516624 B, until t=10.633
+  10.320  INTR ep 0x88                                  | 13 00 01 00 00 00 00 00
+  10.641  INTR ep 0x88                                  | 42 00 00 00 03 00 00 00
+  10.769  INTR ep 0x88                                  | 41 02 01 00 00 00 00 00
+  10.823  OUT  req=10 val=0000 idx=0000 len=0          
+  10.833  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 51 55 1b 00 04 01 02 01 02 05 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+  10.834  OUT  req=10 val=0000 idx=0000 len=0          
+  11.153  INTR ep 0x88                                  | 12 00 00 00 00 00 00 00
+  11.153  OUT  req=10 val=0000 idx=0001 len=0          
+  11.210  BULK ep 0x82  1 xfers, 0 B, until t=11.210 (status -2)
+  11.217  INTR ep 0x88                                  | 01 05 02 00 02 00 00 00
+  11.281  INTR ep 0x88                                  | 10 00 03 00 00 00 00 00
+  11.281  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 10 57 1b 00 03 01 00 01 02 06 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+  11.310  OUT  req=a3 val=dc00 idx=0000 len=78          | 01 f8 00 00 00 00 00 00 00 00 00 00 00 9f c4 01 f4 00 00 00 00 00 00 00 00 00 00 02 97 c4 03 ec 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00...
+  11.311  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 2f 57 1b 00 03 01 00 01 02 06 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 2 more time(s)
+  11.317  OUT  req=11 val=0000 idx=0000 len=0          
+  11.319  OUT  req=45 val=0000 idx=0000 len=3           | 02 00 00
+  11.339  IN   req=a3 val=d901 idx=0000 len=1           | 28
+  11.340  OUT  req=a3 val=d901 idx=0000 len=1           | 20
+  11.345  INTR ep 0x88                                  | 60 00 09 01 00 00 00 00
+  11.361  OUT  req=e0 val=001f idx=0000 len=1           | 00
+        ... previous repeated 1 more time(s)
+  11.363  IN   req=e0 val=001f idx=0000 len=1           | 00
+  11.364  OUT  req=e0 val=0002 idx=0000 len=1           | 20
+  11.366  OUT  req=e0 val=001f idx=0000 len=1           | 02
+        ... previous repeated 1 more time(s)
+  11.368  IN   req=e0 val=001f idx=0000 len=1           | 02
+  11.369  OUT  req=e0 val=0005 idx=0000 len=1           | 00
+  11.371  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.373  IN   req=e0 val=001f idx=0000 len=1           | 03
+  11.375  OUT  req=e0 val=0000 idx=0000 len=1           | 88
+  11.376  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.378  IN   req=e0 val=001f idx=0000 len=1           | 03
+  11.380  OUT  req=e0 val=0001 idx=0000 len=1           | 88
+  11.381  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.383  IN   req=e0 val=001f idx=0000 len=1           | 03
+  11.385  OUT  req=e0 val=0002 idx=0000 len=1           | 88
+  11.386  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.388  IN   req=e0 val=001f idx=0000 len=1           | 03
+  11.390  OUT  req=e0 val=0003 idx=0000 len=1           | 88
+  11.391  OUT  req=e0 val=001f idx=0000 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.394  IN   req=e0 val=001f idx=0000 len=1           | 03
+  11.395  OUT  req=e0 val=0004 idx=0000 len=1           | 88
+  11.396  OUT  req=e0 val=001f idx=0001 len=1           | 00
+        ... previous repeated 1 more time(s)
+  11.399  IN   req=e0 val=001f idx=0001 len=1           | 00
+  11.400  OUT  req=e0 val=0002 idx=0001 len=1           | 20
+  11.401  OUT  req=e0 val=001f idx=0001 len=1           | 02
+        ... previous repeated 1 more time(s)
+  11.404  IN   req=e0 val=001f idx=0001 len=1           | 02
+  11.405  OUT  req=e0 val=0005 idx=0001 len=1           | 00
+  11.406  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.409  INTR ep 0x88                                  | 12 00 00 00 00 00 00 00
+  11.409  IN   req=e0 val=001f idx=0001 len=1           | 03
+  11.410  OUT  req=e0 val=0000 idx=0001 len=1           | 88
+  11.412  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.414  IN   req=e0 val=001f idx=0001 len=1           | 03
+  11.415  OUT  req=e0 val=0001 idx=0001 len=1           | 88
+  11.417  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.419  IN   req=e0 val=001f idx=0001 len=1           | 03
+  11.420  OUT  req=e0 val=0002 idx=0001 len=1           | 88
+  11.422  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.424  IN   req=e0 val=001f idx=0001 len=1           | 03
+  11.426  OUT  req=e0 val=0003 idx=0001 len=1           | 88
+  11.427  OUT  req=e0 val=001f idx=0001 len=1           | 03
+        ... previous repeated 1 more time(s)
+  11.429  IN   req=e0 val=001f idx=0001 len=1           | 03
+  11.431  OUT  req=e0 val=0004 idx=0001 len=1           | 88
+  11.432  OUT  req=a3 val=d901 idx=0000 len=1           | 24
+  11.459  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 c2 57 1b 00 03 01 00 01 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+  11.459  IN   req=33 val=0000 idx=0000 len=20          | f7 c4 06 00 60 1c 0b 00 60 1c 0b 00 84 03 58 00 72 6b 09 00
+  11.461  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 c4 57 1b 00 03 01 00 01 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 3 more time(s)
+  11.465  IN   req=35 val=0000 idx=0000 len=128         | 32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32 3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad 27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36...
+  11.473  INTR ep 0x88                                  | 01 00 00 00 00 00 00 00
+  11.483  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 db 57 1b 00 03 01 00 01 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00
+        ... previous repeated 1 more time(s)
+  11.486  IN   req=35 val=0001 idx=0000 len=256         | ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff...
+  11.521  OUT  req=3a val=0001 idx=0000 len=0          
+  11.732  IN   req=00 val=0000 idx=0000 len=32          | 03 00 01 02 0f 00 09 00 d3 58 1b 00 03 01 00 01 02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00

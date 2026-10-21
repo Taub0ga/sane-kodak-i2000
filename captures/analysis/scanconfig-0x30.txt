@@ -1,0 +1,358 @@
+=== a-open-close.pcapng
+=== b-simplex-lineart-200.pcapng
+--- 0x30 #1  t=6.624
+      00  00 00 01 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  00 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  02 00 c5 00 00 00 11 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              0        0x00   None
+  0x02  PageCount                              1        0x0001
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                0        0x00   Stopped
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            2        0x02   shutter
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             17       0x11   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+--- 0x30 #2  t=6.931
+      00  00 01 00 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  04 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  01 00 c5 00 00 00 01 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              1        0x01   Normal
+  0x02  PageCount                              0        0x0000
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                4        0x04   300 dpi
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            1        0x01   Normal
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             1        0x01   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+=== c-duplex-lineart-200.pcapng
+--- 0x30 #1  t=6.588
+      00  00 00 01 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  00 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  02 00 c5 00 c5 00 33 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              0        0x00   None
+  0x02  PageCount                              1        0x0001
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                0        0x00   Stopped
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            2        0x02   shutter
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     197      0x00c5
+  0x36  FifoEnable                             51       0x33   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+--- 0x30 #2  t=6.853
+      00  00 01 00 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  04 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  01 00 c5 00 c5 00 03 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              1        0x01   Normal
+  0x02  PageCount                              0        0x0000
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                4        0x04   300 dpi
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            1        0x01   Normal
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     197      0x00c5
+  0x36  FifoEnable                             3        0x03   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+=== d1-no-paper.pcapng
+=== e-simplex-lineart-300.pcapng
+--- 0x30 #1  t=6.495
+      00  00 00 01 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  00 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  02 00 c5 00 00 00 11 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              0        0x00   None
+  0x02  PageCount                              1        0x0001
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                0        0x00   Stopped
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            2        0x02   shutter
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             17       0x11   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+--- 0x30 #2  t=6.803
+      00  00 01 00 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  04 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  01 00 c5 00 00 00 01 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              1        0x01   Normal
+  0x02  PageCount                              0        0x0000
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                4        0x04   300 dpi
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            1        0x01   Normal
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             1        0x01   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+=== f-simplex-gray-200.pcapng
+--- 0x30 #1  t=6.525
+      00  00 00 01 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  00 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  02 00 c5 00 00 00 11 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              0        0x00   None
+  0x02  PageCount                              1        0x0001
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                0        0x00   Stopped
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            2        0x02   shutter
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             17       0x11   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none
+--- 0x30 #2  t=6.834
+      00  00 01 00 00 00 00 5d 0e 00 00 6a 08 00 85 03 75
+      10  01 01 85 03 75 01 00 00 00 00 00 00 00 00 00 00
+      20  04 00 00 00 01 00 00 00 36 0c 32 0c 00 00 00 00
+      30  01 00 c5 00 00 00 01 0f 01 00 00 00 00 00 00 00
+      40  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      50  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      60  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      70  00 00 00 00 00 00 00 00
+  0x00  FeedType                               0        0x00   Normal
+  0x01  FeedStyle                              1        0x01   Normal
+  0x02  PageCount                              0        0x0000
+  0x04  TransportTimeout                       0        0x0000
+  0x06  MaxPageLength                          3677     0x0e5d
+  0x08  MultifeedLength                        0        0x0000
+  0x0a  GapLength                              2154     0x086a
+  0x0d  FrontCaptureLEOffset                   901      0x0385
+  0x0f  RearCaptureLEOffset                    373      0x0175
+  0x11  TraySensorMode                         1        0x01   Enabled
+  0x12  FrontCaptureTEOffset                   901      0x0385
+  0x14  RearCaptureTEOffset                    373      0x0175
+  0x16  PrinterOffset                          0        0x0000
+  0x18  PauseEnable                            0        0x00   Disabled
+  0x19  MaxPrintCount                          0        0x00000000
+  0x1d  HoleSize                               0        0x0000
+  0x20  SpeedId                                4        0x04   300 dpi
+  0x21  DynamicSpeedId                         0        0x00   Stopped
+  0x22  ThrottleTimeout                        0        0x00
+  0x23  RampId                                 0        0x00
+  0x24  ImageDataId                            1        0x01   Gray
+  0x25  Stop                                   0        0x00
+  0x26  NotificationOffset                     0        0x0000
+  0x28  MagnificationTargetFixedLength         3126     0x0c36
+  0x2a  MagnificationTargetCalibrationLength   3122     0x0c32
+  0x30  CaptureMode                            1        0x01   Normal
+  0x31  CaptureStyle (front and rear)          0        0x00
+  0x32  FrontOverscanLength                    197      0x00c5
+  0x34  RearOverscanLength                     0        0x0000
+  0x36  FifoEnable                             1        0x01   bit0=front bit1=rear (bits 4/5 additionally set in the shutter pass)
+  0x37  CaptureRate                            15       0x0f   All lines
+  0x38  MultifeedResponse                      1        0x0001   Stop and leave paper
+  0x40  PatchToggleMode                        0        0x00
+  0x48  FeederOnDistance                       0        0x0000
+  bytes outside the known fields that are non-zero: none

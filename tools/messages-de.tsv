@@ -1,0 +1,30 @@
+# Deutsche Fassung der Bedienfeld-Meldungen des Kodak i2600.
+#
+# Die englische Tabelle steckt in /opt/kodak/kds_i2000/lib/devicemanager.so als
+# Eintraege <a>message_REGION_SCREEN</a><c>Text</c>; siehe NATIVES-BACKEND.md
+# Abschnitt 14.  Region 2 sind Betriebszustaende, 3 Hardwarefehler, 4 die
+# Handlungsanweisung zum Zustand.
+#
+# Region 4 laesst oben sechs Zeilen frei: dort zeichnet das Geraet seinen
+# Statusbuchstaben und die Bildschirmnummer selbst.  In Region 2 ist die Ecke
+# leer, dort darf der Text die ganze Hoehe nutzen.
+#
+# Spalten: Region, Bildschirm, Freiraum oben, Englisch, Zeile 1, Zeile 2
+#
+region	screen	top	english	line1	line2
+2	0	0	Check USB Cable	USB-Kabel	prüfen
+2	1	0	Scanning...	Scannt...	
+2	2	0	Clear paper path and close cover	Papierweg frei machen	Abdeckung schließen
+2	3	0	Power saver mode	Energiesparmodus	
+3	1	0	Bad FPGA	FPGA defekt	
+3	2	0	Bad SRAM	SRAM defekt	
+3	3	0	Turn power off then on	Aus- und	einschalten
+4	1	6	Rescan documents	Vorlagen erneut	scannen
+4	2	6	Turn power off then on	Aus- und	einschalten
+4	3	6	Rescan documents	Vorlagen erneut	scannen
+4	4	6	Turn power off then on	Aus- und	einschalten
+4	5	6	Rescan documents	Vorlagen erneut	scannen
+4	6	6	Clear paper path and close cover	Papierweg frei	Abdeckung schließen
+4	7	6	Turn power off then on	Aus- und	einschalten
+4	8	6	Multifeed	Mehrfacheinzug	
+4	9	6	Paper jam	Papierstau	

@@ -1,0 +1,65 @@
+# FPGA-Registerzugriffe (bRequest 0xa3), benannt aus devicemanager.so
+# wValue = Startadresse, wLength = Zahl der Register (je 1 Byte)
+
+   5.131 OUT 0xda27 [ 4]  00 00 00 01             FrontDocIdByte3, FrontDocIdByte3+1, FrontDocIdByte3+2, FrontDocIdByte3+3
+   5.132 OUT 0xdb27 [ 4]  00 00 00 01             RearDocIdByte3, RearDocIdByte3+1, RearDocIdByte3+2, RearDocIdByte3+3
+   5.149 IN  0xd901 [ 1]  24                      CommonGeneralControl
+   5.150 OUT 0xd901 [ 1]  20                      CommonGeneralControl
+   5.241 OUT 0xd901 [ 1]  24                      CommonGeneralControl
+   5.342 IN  0xde37 [ 1]  00                      SpiFlashStatus
+   5.908 IN  0xda27 [ 4]  00 00 00 01             FrontDocIdByte3, FrontDocIdByte3+1, FrontDocIdByte3+2, FrontDocIdByte3+3
+   5.909 IN  0xdb27 [ 4]  00 00 00 01             RearDocIdByte3, RearDocIdByte3+1, RearDocIdByte3+2, RearDocIdByte3+3
+   5.910 OUT 0xda27 [ 4]  00 00 00 01             FrontDocIdByte3, FrontDocIdByte3+1, FrontDocIdByte3+2, FrontDocIdByte3+3
+   5.911 OUT 0xdb27 [ 4]  00 00 00 01             RearDocIdByte3, RearDocIdByte3+1, RearDocIdByte3+2, RearDocIdByte3+3
+   5.915 OUT 0xd900 [ 1]  01                      CommonIpControl
+   5.916 IN  0xd901 [ 1]  24                      CommonGeneralControl
+   5.917 OUT 0xd901 [ 1]  20                      CommonGeneralControl
+   5.938 OUT 0xd901 [ 1]  20                      CommonGeneralControl
+   5.958 OUT 0xd903 [ 1]  00                      X_Scaling
+   5.959 OUT 0xd904 [ 1]  00                      Y_Scaling
+   5.960 OUT 0xd905 [ 1]  07                      RedRephaseLineStorageAmount
+   5.961 OUT 0xd906 [ 1]  04                      GreenRephaseLineStorateAmount
+   5.962 OUT 0xd907 [ 1]  28                      BlueLineBuffer
+   5.963 OUT 0xd920 [ 1]  22                      X_Y_ResolutionFooterOnly
+   5.964 OUT 0xdc00 [78]  01 f8 00 00 00 00 00 00 00 00 00 00...  JpegControl .. SDRamDriverEnable  (78 Register)
+   6.363 OUT 0xda06 [ 1]  00                      FrontFixedPageLengthHi
+   6.364 OUT 0xda07 [ 1]  14                      FrontFixedPageLengthLo
+   6.365 OUT 0xda2b [ 1]  00                      FrontGrayScaleSelection
+   6.366 OUT 0xda04 [ 1]  05                      FrontImageWidthHi
+   6.367 OUT 0xda05 [ 1]  0a                      FrontImageWidthLo
+   6.368 OUT 0xda08 [ 1]  00                      FrontPageDetectLeftLimitHi
+   6.369 OUT 0xda09 [ 1]  04                      FrontPageDetectLeftLimitLo
+   6.370 OUT 0xda01 [ 1]  00                      FrontIP_Control
+   6.371 OUT 0xda25 [ 1]  01                      FrontImageFormatFooterOnly
+   6.372 OUT 0xda0c [ 1]  00                      FrontPageStartThresholdHi
+   6.373 OUT 0xda0d [ 1]  14                      FrontPageStartThresholdLo
+   6.374 OUT 0xda0a [ 1]  05                      FrontPageDetectWidthHi
+   6.375 OUT 0xda0b [ 1]  0a                      FrontPageDetectWidthLo
+   6.376 OUT 0xda02 [ 1]  00                      FrontHorizontalCropLeftHi
+   6.377 OUT 0xda03 [ 1]  04                      FrontHorizontalCropLeftLo
+   6.378 OUT 0xda11 [ 1]  01                      FrontWhiteBalanceTargetRedGsHi
+   6.379 OUT 0xda12 [ 1]  41                      FrontWhiteBalanceTargetRedGsLo
+   6.380 OUT 0xd901 [ 1]  28                      CommonGeneralControl
+   6.481 IN  0xda11 [ 1]  01                      FrontWhiteBalanceTargetRedGsHi
+   6.481 IN  0xda12 [ 1]  41                      FrontWhiteBalanceTargetRedGsLo
+   6.482 IN  0xda13 [ 1]  01                      FrontWhiteBalanceTargetGreenHi
+   6.483 IN  0xda14 [ 1]  40                      FrontWhiteBalanceTargetGreenLo
+   6.484 IN  0xda15 [ 1]  01                      FrontWhiteBalanceTargetBlueHi
+   6.485 IN  0xda16 [ 1]  4b                      FrontWhiteBalanceTargetBlueLo
+   6.486 IN  0xda19 [ 1]  01                      FrontWhitePatchAverageRedGsHi
+   6.487 IN  0xda1a [ 1]  40                      FrontWhitePatchAverageRedGsLo
+   6.488 IN  0xda19 [ 1]  01                      FrontWhitePatchAverageRedGsHi
+   6.489 IN  0xda1a [ 1]  42                      FrontWhitePatchAverageRedGsLo
+   6.490 IN  0xda19 [ 1]  01                      FrontWhitePatchAverageRedGsHi
+   6.491 IN  0xda1a [ 1]  40                      FrontWhitePatchAverageRedGsLo
+   6.492 OUT 0xdd0b [ 1]  46                      UddsTwoPageSampleInterval
+   6.493 IN  0xdd0a [ 1]  40                      UddsMultifeedSetup
+   6.494 OUT 0xdd0a [ 1]  40                      UddsMultifeedSetup
+   6.800 OUT 0xda0e [ 1]  12                      FrontValidPixelLevelThreshold
+   6.801 OUT 0xda06 [ 1]  12                      FrontFixedPageLengthHi
+   6.802 OUT 0xda07 [ 1]  2a                      FrontFixedPageLengthLo
+  15.772 OUT 0xdc00 [78]  01 f8 00 00 00 00 00 00 00 00 00 00...  JpegControl .. SDRamDriverEnable  (78 Register)
+  15.844 OUT 0xdc00 [78]  01 f8 00 00 00 00 00 00 00 00 00 00...  JpegControl .. SDRamDriverEnable  (78 Register)
+  15.970 IN  0xd901 [ 1]  28                      CommonGeneralControl
+  16.013 OUT 0xd901 [ 1]  20                      CommonGeneralControl
+  16.104 OUT 0xd901 [ 1]  24                      CommonGeneralControl

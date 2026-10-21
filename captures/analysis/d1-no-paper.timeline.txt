@@ -1,0 +1,852 @@
+==============================================================================
+captures/usbmon-text/d1-no-paper.usbmon
+  622 events total, 622 for device address 6, 0.609 s
+
+--- 1. endpoint summary (completions only) ---
+endpoint                                      xfers       bytes     min      max   err
+EP0  CONTROL in                                 259        7255       1      256     0
+EP0  CONTROL out                                 52         948       0      768     0
+
+--- 2. control transfers (by setup packet) ---
+  x70   bmRequestType=0x80 bRequest=0x06 wValue=0x0100 wIndex=0x0000 wLength=18
+  x70   bmRequestType=0x80 bRequest=0x06 wValue=0x0200 wIndex=0x0000 wLength=8
+  x70   bmRequestType=0x80 bRequest=0x06 wValue=0x0200 wIndex=0x0000 wLength=53
+  x15   bmRequestType=0xc0 bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+  x14   bmRequestType=0x40 bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+  x14   bmRequestType=0x40 bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+  x7    bmRequestType=0xc0 bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+  x7    bmRequestType=0xc0 bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+  x3    bmRequestType=0xc0 bRequest=0x37 wValue=0x0000 wIndex=0x0000 wLength=64
+  x2    bmRequestType=0xc0 bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+  x2    bmRequestType=0x40 bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0002 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0002 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0x80 bRequest=0x08 wValue=0x0000 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x00 bRequest=0x09 wValue=0x0001 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0301 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0302 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0303 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0xc0 bRequest=0x02 wValue=0x0000 wIndex=0x0000 wLength=56
+  x1    bmRequestType=0xc0 bRequest=0x34 wValue=0x0000 wIndex=0x0000 wLength=55
+  x1    bmRequestType=0xc0 bRequest=0x36 wValue=0x0000 wIndex=0x0000 wLength=16
+  x1    bmRequestType=0x40 bRequest=0x1f wValue=0x3086 wIndex=0x82cb wLength=0
+  x1    bmRequestType=0xc0 bRequest=0x03 wValue=0x0000 wIndex=0x0000 wLength=32
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda27 wIndex=0x0000 wLength=4
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xdb27 wIndex=0x0000 wLength=4
+  x1    bmRequestType=0xc0 bRequest=0xe3 wValue=0x0003 wIndex=0xfc00 wLength=256
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0005 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0001 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0003 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0004 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0005 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0001 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0003 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0004 wIndex=0x0001 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0x45 wValue=0x0000 wIndex=0x0000 wLength=3
+  x1    bmRequestType=0x40 bRequest=0x11 wValue=0x0000 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0xc0 bRequest=0x32 wValue=0x0000 wIndex=0x0000 wLength=2
+  x1    bmRequestType=0x40 bRequest=0x62 wValue=0x0104 wIndex=0x0680 wLength=768
+  x1    bmRequestType=0x40 bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+  x1    bmRequestType=0x40 bRequest=0x16 wValue=0x0009 wIndex=0x01ff wLength=0
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xde37 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0x33 wValue=0x0000 wIndex=0x0000 wLength=20
+  x1    bmRequestType=0xc0 bRequest=0x35 wValue=0x0001 wIndex=0x0000 wLength=256
+
+--- 3. chronological transfer timeline ---
+    (control: direction, bRequest, wValue, wIndex, length, data)
+  + 0.000000  CTRL IN  std    bRequest=0x08 wValue=0x0000 wIndex=0x0000 len=1
+              0000  01                                               |.|
+  + 0.000348  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.000571  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.000731  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.001202  CTRL OUT std    bRequest=0x09 wValue=0x0001 wIndex=0x0000 len=0
+  + 0.001867  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.002019  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.002171  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.002338  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.002982  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.003141  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.003315  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.003472  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.003642  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.003826  CTRL IN  std    bRequest=0x06 wValue=0x0301 wIndex=0x0409 len=256
+              0000  16 03 4b 00 4f 00 44 00 41 00 4b 00 20 00 20 00  |..K.O.D.A.K. . .|
+              0010  20 00 20 00 20 00                                | . . .|
+  + 0.004001  CTRL IN  std    bRequest=0x06 wValue=0x0302 wIndex=0x0409 len=256
+              0000  1c 03 69 00 32 00 36 00 30 00 30 00 20 00 53 00  |..i.2.6.0.0. .S.|
+              0010  43 00 41 00 4e 00 4e 00 45 00 52 00              |C.A.N.N.E.R.|
+  + 0.004173  CTRL IN  std    bRequest=0x06 wValue=0x0303 wIndex=0x0409 len=256
+              0000  22 03 30 00 30 00 30 00 30 00 30 00 30 00 30 00  |".0.0.0.0.0.0.0.|
+              0010  30 00 30 00 30 00 30 00 30 00 30 00 30 00 30 00  |0.0.0.0.0.0.0.0.|
+  + 0.014967  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 90 1b 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.015698  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 91 1b 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.017089  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 93 1b 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.018033  CTRL IN  vendor bRequest=0x02 wValue=0x0000 wIndex=0x0000 len=56
+              0000  00 04 01 0d 00 04 01 0e 00 01 02 0f 00 1f 00 00  |................|
+              0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+  + 0.019574  CTRL IN  vendor bRequest=0x34 wValue=0x0000 wIndex=0x0000 len=55
+              0000  04 0a 60 1d 00 03 00 4b 4f 44 41 4b 20 20 20 20  |..`....KODAK    |
+              0010  20 00 00 00 00 00 00 69 32 36 30 30 20 53 43 41  | ......i2600 SCA|
+  + 0.029266  CTRL IN  vendor bRequest=0x36 wValue=0x0000 wIndex=0x0000 len=16
+              0000  30 30 30 30 30 30 30 30 34 38 37 38 35 39 34 32  |0000000048785942|
+  + 0.032971  CTRL IN  vendor bRequest=0x37 wValue=0x0000 wIndex=0x0000 len=64
+              0000  01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06  |.........F...F..|
+              0010  12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72  |...A...A.w.r.w.r|
+  + 0.034278  CTRL OUT vendor bRequest=0x1f wValue=0x3086 wIndex=0x82cb len=0
+  + 0.035579  CTRL IN  vendor bRequest=0x03 wValue=0x0000 wIndex=0x0000 len=32
+              0000  98 66 84 03 77 01 00 00 00 00 00 00 00 00 00 00  |.f..w...........|
+              0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+  + 0.036645  CTRL IN  vendor bRequest=0x35 wValue=0x0000 wIndex=0x0000 len=128
+              0000  32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32  |2014/02/13 10:32|
+              0010  3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad  |:04:056.....'.'.|
+  + 0.054936  CTRL OUT vendor bRequest=0xa3 wValue=0xda27 wIndex=0x0000 len=4
+              0000  00 00 00 01                                      |....|
+  + 0.055802  CTRL OUT vendor bRequest=0xa3 wValue=0xdb27 wIndex=0x0000 len=4
+              0000  00 00 00 01                                      |....|
+  + 0.056719  CTRL IN  vendor bRequest=0xe3 wValue=0x0003 wIndex=0xfc00 len=256
+              0000  aa 03 b5 00 85 00 c6 00 00 00 00 00 00 00 bc 00  |................|
+              0010  8d 00 c9 00 00 00 00 00 00 00 a7 00 a7 00 00 00  |................|
+  + 0.069990  CTRL IN  vendor bRequest=0x37 wValue=0x0000 wIndex=0x0000 len=64
+              0000  01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06  |.........F...F..|
+              0010  12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72  |...A...A.w.r.w.r|
+  + 0.071188  CTRL IN  vendor bRequest=0x37 wValue=0x0000 wIndex=0x0000 len=64
+              0000  01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06  |.........F...F..|
+              0010  12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72  |...A...A.w.r.w.r|
+  + 0.072473  CTRL IN  vendor bRequest=0xa3 wValue=0xd901 wIndex=0x0000 len=1
+              0000  24                                               |$|
+  + 0.073338  CTRL OUT vendor bRequest=0xa3 wValue=0xd901 wIndex=0x0000 len=1
+              0000  20                                               | |
+  + 0.094395  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  00                                               |.|
+  + 0.095255  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  00                                               |.|
+  + 0.096500  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  00                                               |.|
+  + 0.097709  CTRL OUT vendor bRequest=0xe0 wValue=0x0002 wIndex=0x0000 len=1
+              0000  20                                               | |
+  + 0.099016  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  02                                               |.|
+  + 0.100286  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  02                                               |.|
+  + 0.101540  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  02                                               |.|
+  + 0.102748  CTRL OUT vendor bRequest=0xe0 wValue=0x0005 wIndex=0x0000 len=1
+              0000  00                                               |.|
+  + 0.104077  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.105344  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.106594  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.107858  CTRL OUT vendor bRequest=0xe0 wValue=0x0000 wIndex=0x0000 len=1
+              0000  88                                               |.|
+  + 0.109118  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.110447  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.111699  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.112973  CTRL OUT vendor bRequest=0xe0 wValue=0x0001 wIndex=0x0000 len=1
+              0000  88                                               |.|
+  + 0.114236  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.115450  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.116743  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.118008  CTRL OUT vendor bRequest=0xe0 wValue=0x0002 wIndex=0x0000 len=1
+              0000  88                                               |.|
+  + 0.119286  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.120552  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.121806  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.123096  CTRL OUT vendor bRequest=0xe0 wValue=0x0003 wIndex=0x0000 len=1
+              0000  88                                               |.|
+  + 0.124309  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.125562  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.126923  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0000 len=1
+              0000  03                                               |.|
+  + 0.128149  CTRL OUT vendor bRequest=0xe0 wValue=0x0004 wIndex=0x0000 len=1
+              0000  88                                               |.|
+  + 0.129429  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  00                                               |.|
+  + 0.130726  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  00                                               |.|
+  + 0.132010  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  00                                               |.|
+  + 0.133257  CTRL OUT vendor bRequest=0xe0 wValue=0x0002 wIndex=0x0001 len=1
+              0000  20                                               | |
+  + 0.134514  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  02                                               |.|
+  + 0.135754  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  02                                               |.|
+  + 0.137076  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  02                                               |.|
+  + 0.138315  CTRL OUT vendor bRequest=0xe0 wValue=0x0005 wIndex=0x0001 len=1
+              0000  00                                               |.|
+  + 0.139513  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.140777  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.142074  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.143359  CTRL OUT vendor bRequest=0xe0 wValue=0x0000 wIndex=0x0001 len=1
+              0000  88                                               |.|
+  + 0.144580  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.145845  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.147171  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.148373  CTRL OUT vendor bRequest=0xe0 wValue=0x0001 wIndex=0x0001 len=1
+              0000  88                                               |.|
+  + 0.149710  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.151002  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.152255  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.153433  CTRL OUT vendor bRequest=0xe0 wValue=0x0002 wIndex=0x0001 len=1
+              0000  88                                               |.|
+  + 0.154744  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.156051  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.157341  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.158522  CTRL OUT vendor bRequest=0xe0 wValue=0x0003 wIndex=0x0001 len=1
+              0000  88                                               |.|
+  + 0.159793  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.161103  CTRL OUT vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.162350  CTRL IN  vendor bRequest=0xe0 wValue=0x001f wIndex=0x0001 len=1
+              0000  03                                               |.|
+  + 0.163587  CTRL OUT vendor bRequest=0xe0 wValue=0x0004 wIndex=0x0001 len=1
+              0000  88                                               |.|
+  + 0.164832  CTRL OUT vendor bRequest=0xa3 wValue=0xd901 wIndex=0x0000 len=1
+              0000  24                                               |$|
+  + 0.185818  CTRL IN  vendor bRequest=0x45 wValue=0x0000 wIndex=0x0000 len=3
+              0000  02 00 00                                         |...|
+  + 0.186268  CTRL OUT vendor bRequest=0x11 wValue=0x0000 wIndex=0x0000 len=0
+  + 0.187865  CTRL IN  vendor bRequest=0x32 wValue=0x0000 wIndex=0x0000 len=2
+              0000  0e 3c                                            |.<|
+  + 0.199634  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 49 1c 05 00 03 01 00 01  |........I.......|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.220957  CTRL OUT vendor bRequest=0x62 wValue=0x0104 wIndex=0x0680 len=768
+              0000  00 c0 40 40 40 40 80 00 00 00 00 00 00 00 00 00  |..@@@@..........|
+              0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+  + 0.229784  CTRL OUT vendor bRequest=0x35 wValue=0x0000 wIndex=0x0000 len=128
+              0000  32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32  |2014/02/13 10:32|
+              0010  3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad  |:04:056.....'.'.|
+  + 0.251841  CTRL OUT vendor bRequest=0x16 wValue=0x0009 wIndex=0x01ff len=0
+  + 0.252645  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 7e 1c 05 00 03 01 00 01  |........~.......|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.263301  CTRL IN  vendor bRequest=0xa3 wValue=0xde37 wIndex=0x0000 len=1
+              0000  00                                               |.|
+  + 0.371781  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 f4 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.373001  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 f5 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.373799  CTRL IN  vendor bRequest=0x33 wValue=0x0000 wIndex=0x0000 len=20
+              0000  f3 c4 06 00 55 1c 0b 00 55 1c 0b 00 d3 fd 57 00  |....U...U.....W.|
+              0010  6a 6b 09 00                                      |jk..|
+  + 0.375247  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 f8 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.376434  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 f9 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.377517  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 fa 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.378660  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 fb 1c 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.379667  CTRL IN  vendor bRequest=0x35 wValue=0x0000 wIndex=0x0000 len=128
+              0000  32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32  |2014/02/13 10:32|
+              0010  3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad  |:04:056.....'.'.|
+  + 0.397932  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 0f 1d 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.399251  CTRL IN  vendor bRequest=0x35 wValue=0x0001 wIndex=0x0000 len=256
+              0000  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+              0010  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+  + 0.446983  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.447253  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.447443  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.448076  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.448278  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.448468  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.449081  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.449296  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.449482  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.450073  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.450276  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.450464  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.451055  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.451248  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.451438  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.452092  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.452303  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.452495  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.453121  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.453308  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.453497  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.454115  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.454302  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.454507  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.455085  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.455293  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.455472  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.456140  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.456294  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.456440  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.457444  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.457643  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.457857  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.458835  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.459004  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.459163  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.459610  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.459772  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.459924  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.460292  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.460451  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.460689  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.461052  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.461207  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.461374  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.461784  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.461936  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.462099  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.462454  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.462677  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.462853  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.463269  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.463437  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.463664  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.464022  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.464175  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.464333  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.464718  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.464872  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.465054  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.465414  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.465634  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.465797  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.466146  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.466299  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.466464  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.467162  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.467319  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.467470  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.467900  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.468051  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.468199  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.469038  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.469193  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.469377  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.469712  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.469866  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.470031  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.470384  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.470546  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.470762  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.471268  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.471420  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.471619  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.471994  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.472143  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.472297  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.472642  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.472793  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.472951  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.473531  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.473682  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.473845  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.474187  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.474337  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.474494  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.474868  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.475019  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.475169  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.475523  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.475704  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.475868  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.476261  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.476412  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.476626  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.477022  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.477197  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.477382  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.477787  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.477939  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.478100  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.478519  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.478703  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.478890  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.479423  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.479646  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.479796  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.480184  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.480341  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.480510  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.480989  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.481160  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.481315  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.481654  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.481806  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.481962  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.482530  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.482706  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.482873  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.483253  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.483406  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.483567  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.484097  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.484275  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.484429  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.484874  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.485055  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.485202  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.485609  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.485765  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.485945  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.486380  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.486540  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.486769  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.487735  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.487892  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.488050  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.488412  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.488574  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.488767  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.489104  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.489265  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.489425  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.489778  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.489927  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.490099  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.490619  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.490774  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.490945  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.491393  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.491559  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.491757  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.492195  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.492375  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.492564  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.492951  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.493103  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.493252  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.493596  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.493753  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.493902  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.494249  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.494416  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.494595  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.494994  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.495148  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.495312  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.495714  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.495869  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.496018  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.496385  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.496536  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.496728  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.497108  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.497288  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.497442  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.497880  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.498032  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.498200  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.498735  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.498895  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.499049  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.499642  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.499796  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.499950  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.500297  CTRL IN  std    bRequest=0x06 wValue=0x0100 wIndex=0x0000 len=18
+              0000  12 01 00 02 ff ff ff 40 0a 04 1d 60 01 02 01 02  |.......@...`....|
+              0010  03 01                                            |..|
+  + 0.500448  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=8
+              0000  09 02 35 00 01 01 00 c0                          |..5.....|
+  + 0.500598  CTRL IN  std    bRequest=0x06 wValue=0x0200 wIndex=0x0000 len=53
+              0000  09 02 35 00 01 01 00 c0 01 09 04 00 00 05 ff ff  |..5.............|
+              0010  ff 00 07 05 81 03 08 00 0a 07 05 02 02 00 02 00  |................|
+  + 0.500873  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 75 1d 05 00 03 01 00 01  |........u.......|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.501555  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 76 1d 05 00 03 01 00 01  |........v.......|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+  + 0.608113  CTRL IN  vendor bRequest=0x00 wValue=0x0000 wIndex=0x0000 len=32
+              0000  03 00 01 02 0f 00 09 00 e0 1d 05 00 03 01 00 01  |................|
+              0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+--- 4. OUT command histograms ---
+  first two bytes: (none)
+  lengths        : (none)

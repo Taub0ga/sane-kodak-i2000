@@ -1,0 +1,24 @@
+post_install() {
+  ldconfig >/dev/null 2>&1 || true
+  systemd-tmpfiles --create kodak-i2000.conf >/dev/null 2>&1 || true
+  cat <<'MSG'
+==> Kodak i2000 driver installed.
+    The SANE backend is enabled via /etc/sane.d/dll.d/kodak-i2000.
+    Access to the scanner's USB node already works for the locally logged-in
+    user: sane-backends lists 040a:601d in its hwdb, and systemd's
+    70-uaccess.rules grants an ACL for it.  No extra udev rule is needed.
+    Test with:  scanimage -L
+MSG
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  ldconfig >/dev/null 2>&1 || true
+  cat <<'MSG'
+==> /var/kodak was left in place; remove it manually if you do not want the
+    driver's debug logs:  sudo rm -rf /var/kodak
+MSG
+}

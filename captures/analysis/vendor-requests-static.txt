@@ -1,0 +1,143 @@
+# Vendor-Requests, statisch aus /opt/kodak/kds_i2000/lib/devicemanager.so gezogen:
+# jedes DeviceSettings::Set/Get mit dem bRequest aus dem Aufrufer.  Set = OUT
+# (bmRequestType 0x40), Get = IN (0xc0).  "var" heisst: zur Laufzeit berechnet.
+# Ergaenzt captures/analysis/vendor-requests.txt, das aus den Mitschnitten kommt.
+
+=== bRequest 0x02
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::GetFirmwareVersions()
+=== bRequest 0x03
+    Get wValue=var      wIndex=var      len=0x20     DeviceManager::CMachineConstants::GetMachineConstants()
+=== bRequest 0x09
+    Get wValue=var      wIndex=var      len=0x650    DeviceManager::CLogs::GetEventLog(xml::Getlog&, xml::Reportlog&)
+    Get wValue=var      wIndex=var      len=0x650    DeviceManager::CLogsA4::GetEventLog(xml::Getlog&, xml::Reportlog&)
+=== bRequest 0x0a
+    Get wValue=0x1      wIndex=var      len=0xff0    DeviceManager::CLogs::GetTraceLog(xml::Reportlog&)
+    Get wValue=0x1      wIndex=var      len=0xff0    DeviceManager::CLogsA4::GetTraceLog(xml::Reportlog&)
+    Get wValue=0x1      wIndex=0x3      len=0x2      DeviceManager::CTraceLog::GetUnreadByteCount()
+=== bRequest 0x10
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::ScannerOperation(DeviceManager::_ScannerOp)
+=== bRequest 0x13
+    Set wValue=var      wIndex=var      len=0x5      DeviceManager::CLogs::AddEventToScannerLog(FwEventLogEntry const&)
+=== bRequest 0x16
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SetButtonSequenceNumber(unsigned short, unsigned short)
+=== bRequest 0x17
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::StartCapture(unsigned short)
+=== bRequest 0x18
+    Set wValue=var      wIndex=var      len=0x4      DeviceManager::DeviceSettings::SetAutoWhite(bool)
+=== bRequest 0x1e
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettingsP2::SetBatchState(unsigned char, unsigned char, unsigned char)
+=== bRequest 0x1f
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SetTime(OsTimeRecord&)
+=== bRequest 0x20
+    Set wValue=var      wIndex=var      len=0x4      DeviceManager::DeviceSettingsA4::ScannerOperation(DeviceManager::_ScannerOp)
+=== bRequest 0x30
+    Set wValue=var      wIndex=var      len=0x78     DeviceManager::CScannerConfiguration::SetScannerConfiguration(SDmScanConfig const&)
+=== bRequest 0x31
+    Get wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::GetEnergyStar()
+    Set wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::SetEnergyStar(unsigned char)
+=== bRequest 0x32
+    Get wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::GetLowPowerTimeout()
+    Get wValue=var      wIndex=var      len=0x2      DeviceManager::DeviceSettingsP2::GetLowPowerTimeout()
+    Get wValue=var      wIndex=var      len=0x2      DeviceManager::DeviceSettingsP2::GetPowerOffTimeout()
+    Set wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::SetLowPowerTimeout(unsigned char, unsigned char)
+    Set wValue=var      wIndex=var      len=0x2      DeviceManager::DeviceSettingsP2::SetLowPowerTimeout(unsigned char, unsigned char)
+=== bRequest 0x33
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::GetMeters()
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SetMeters(FwUsbMeters const&)
+=== bRequest 0x34
+    Get wValue=var      wIndex=0x6      len=0x37     DeviceManager::DeviceSettings::GetEndOfLine()
+    Set wValue=var      wIndex=var      len=0x37     DeviceManager::DeviceSettings::SetEndOfLine(FwEndOfLine const&)
+=== bRequest 0x35
+    Get wValue=0x1      wIndex=var      len=0x100    DeviceManager::DeviceSettings::GetConsumableMetersData()
+    Get wValue=var      wIndex=var      len=0x80     DeviceManager::DeviceSettings::GetNvRamData()
+    Set wValue=0x1      wIndex=var      len=0x100    DeviceManager::DeviceSettings::SetConsumableMetersData(_ConsumableMeters&)
+    Set wValue=var      wIndex=var      len=0x80     DeviceManager::DeviceSettings::SetNvRamData(NvRam const&)
+=== bRequest 0x36
+    Get wValue=0x2      wIndex=var      len=0x10     DeviceManager::DeviceSettingsA4::GetMechanicalCalData()
+    Get wValue=var      wIndex=var      len=0x10     DeviceManager::DeviceSettings::GetBoardSerialNumber(EUSBBOARDID, char*)
+    Set wValue=0x1      wIndex=var      len=0x4      DeviceManager::DeviceSettings::SetUddsCalibrationData(FwUddsCalData const&)
+    Set wValue=0x2      wIndex=var      len=0x10     DeviceManager::DeviceSettingsA4::SetMechanicalCalData(FwMechanicalCalData const&)
+    Set wValue=var      wIndex=var      len=0x10     DeviceManager::DeviceSettings::SetBoardSerialNumber(EUSBBOARDID, char*)
+=== bRequest 0x37
+    Get wValue=var      wIndex=var      len=0x40     DeviceManager::DeviceSettings::GetSessionInfo()
+    Set wValue=var      wIndex=var      len=0x40     DeviceManager::DeviceSettings::SetSessionInfo(SDmSessionInfo&)
+=== bRequest 0x3a
+    Set wValue=var      wIndex=0x1      len=var      DeviceManager::Scanner::StartInterruptEvents()
+    Set wValue=var      wIndex=var      len=var      DeviceManager::Scanner::StopInterruptEvents()
+=== bRequest 0x3c
+    Set wValue=0x1      wIndex=var      len=0x4      DeviceManager::DeviceSettingsP2::SetUddsCalibrationData(FwUddsCalData const&)
+=== bRequest 0x3f
+    Set wValue=var      wIndex=var      len=var      DeviceManager::Diagnostics::SetFeederClutch(bool)
+    Set wValue=var      wIndex=0xa      len=var      DeviceManager::Diagnostics::SetTransportMotor(bool)
+=== bRequest 0x40
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::GetSubSystemCommand(unsigned char, unsigned char, unsigned short, unsigned short, unsigned char*)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SetSubSystemCommand(unsigned char, unsigned char, unsigned short, unsigned short, unsigned char*)
+=== bRequest 0x41
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::GetCameraData(unsigned short, unsigned short, unsigned int, unsigned char*)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SetCameraData(unsigned short, unsigned short, unsigned int, unsigned char*)
+=== bRequest 0x44
+    Set wValue=0x1      wIndex=var      len=0x1      DeviceManager::Diagnostics::SetLamps(bool, bool, bool, bool)
+    Set wValue=var      wIndex=var      len=0x1      DeviceManager::Diagnostics::SetLamps(bool, bool, bool, bool)
+=== bRequest 0x45
+    Get wValue=var      wIndex=var      len=0x3      DeviceManager::DeviceSettingsP2::GetBatchData(SDmBatchData*)
+    Set wValue=var      wIndex=var      len=0x3      DeviceManager::DeviceSettingsP2::SetBatchData(unsigned char, unsigned char, unsigned char)
+=== bRequest 0x5f
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettingsP2::SetOCPLED(unsigned char, unsigned short)
+=== bRequest 0x62
+    Set wValue=var      wIndex=0x680    len=0x300    DeviceManager::OCP::LcdPopulate(unsigned char const*, unsigned char, unsigned char)
+=== bRequest 0x63
+    Set wValue=0x1      wIndex=var      len=0x1      DeviceManager::LCDContrastCalibration::Begin()
+    Set wValue=0x2      wIndex=var      len=0x1      DeviceManager::LCDContrastCalibration::Run()
+    Set wValue=0x3      wIndex=var      len=0x1      DeviceManager::LCDContrastCalibration::End()
+=== bRequest 0x64
+    Set wValue=var      wIndex=var      len=var      DeviceManager::OCP::PopulateAllMessages(bool)
+=== bRequest 0xa0
+    Set wValue=0xe600   wIndex=var      len=0x1      DeviceManager::InitializeScanner::LoadInternalFirmware(unsigned char const*, unsigned int, unsigned short, bool, bool)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::InitializeScanner::LoadInternalFirmware(unsigned char const*, unsigned int, unsigned short, bool, bool)
+=== bRequest 0xa2
+    Get wValue=0x1fe0   wIndex=var      len=0x18     DeviceManager::CLogs::GetVersionLog(xml::Getlog&, xml::Reportlog&)
+    Get wValue=0x1fe0   wIndex=var      len=0x18     DeviceManager::FCT::GetESN()
+    Get wValue=0x1fe0   wIndex=var      len=0x18     DeviceManager::FCT::SetESN(char const*)
+    Get wValue=0x1ff8   wIndex=var      len=0x8      DeviceManager::CLogs::GetEOLLog(xml::Getlog&, xml::Reportlog&)
+    Get wValue=0x1ff8   wIndex=var      len=0x8      DeviceManager::FCT::GetDateStamp()
+    Get wValue=var      wIndex=var      len=var      DeviceManager::InitializeScanner::ProgramBooter()
+    Get wValue=var      wIndex=var      len=0x8      DeviceManager::InitializeScanner::ProgramBooter()
+    Set wValue=0x8      wIndex=var      len=var      DeviceManager::InitializeScanner::ProgramBooter()
+    Set wValue=0x1fe0   wIndex=var      len=0x18     DeviceManager::FCT::SetESN(char const*)
+    Set wValue=0x1ff8   wIndex=var      len=0x8      DeviceManager::FCT::SetDateStamp(char const*)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::InitializeScanner::ProgramBooter()
+    Set wValue=var      wIndex=var      len=0x8      DeviceManager::InitializeScanner::ProgramBooter()
+=== bRequest 0xa3
+    Get wValue=var      wIndex=var      len=var      DeviceManager::FpgaBase::Get(unsigned short, unsigned short, unsigned int, unsigned char*)
+    Set wValue=0xd80e   wIndex=var      len=0x1      DeviceManager::InitializeScanner::LoadFirmwareBank(unsigned char, unsigned char const*, unsigned int)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::FpgaBase::Set(unsigned short, unsigned short, unsigned int, unsigned char*)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::InitializeScanner::LoadFirmwareBank(unsigned char, unsigned char const*, unsigned int)
+=== bRequest 0xa5
+    Get wValue=var      wIndex=var      len=0x1      DeviceManager::FCT::ReadLocation(xml::FCTADDRESSTYPE, unsigned int)
+    Set wValue=var      wIndex=var      len=0x1      DeviceManager::FCT::WriteLocation(xml::FCTADDRESSTYPE, unsigned int, unsigned int)
+=== bRequest 0xe0
+    Get wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::ReadAfeDevice(unsigned char, unsigned short, unsigned char*)
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::ReadCameraDevice(unsigned short, unsigned char, unsigned short, unsigned char*, unsigned short)
+    Set wValue=0x1f     wIndex=var      len=0x1      DeviceManager::DeviceSettings::SetCameraPageValue(unsigned short, unsigned char)
+    Set wValue=var      wIndex=var      len=0x1      DeviceManager::DeviceSettings::WriteAfeDevice(unsigned char, unsigned short, unsigned char)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::WriteCameraDevice(unsigned short, unsigned char, unsigned short, unsigned char*, unsigned short)
+=== bRequest 0xe1
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::ReadSramMemory(unsigned int, unsigned char*, unsigned short)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::WriteSramMemory(unsigned int, unsigned char*, unsigned short)
+=== bRequest 0xe2
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::ReadSdramMemory(unsigned int, unsigned char*, unsigned short)
+=== bRequest 0xe3
+    Get wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::ReadFlashMemory(unsigned int, unsigned char*, unsigned short)
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::WriteFlashMemory(unsigned int, unsigned char*, unsigned short)
+=== bRequest 0xe4
+    Set wValue=0x100    wIndex=var      len=0x400    DeviceManager::DeviceSettings::SetColorLookUpTable(unsigned short, unsigned char*, xml::CAMERATYPE)
+    Set wValue=var      wIndex=var      len=0x400    DeviceManager::DeviceSettingsA4::SetColorLookUpTable(unsigned short, unsigned char*, xml::CAMERATYPE)
+=== bRequest 0xe5
+    Set wValue=var      wIndex=var      len=0x800    DeviceManager::DeviceSettingsA4::SetColorCorrectionTable(unsigned char*, xml::CAMERATYPE)
+    Set wValue=var      wIndex=var      len=0x800    DeviceManager::DeviceSettingsP2::SetColorCorrectionTable(unsigned char*, xml::CAMERATYPE)
+=== bRequest 0xf0
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::PerformDiagnosticAction(unsigned short, unsigned short)
+=== bRequest 0xf1
+    Set wValue=var      wIndex=var      len=var      DeviceManager::DeviceSettings::SendDiagnosticRequest(unsigned short, unsigned short, unsigned char*, unsigned short)
+=== bRequest 0xf2
+    Get wValue=var      wIndex=var      len=0x200    DeviceManager::DeviceSettings::GetDiagnosticResults(unsigned char*)

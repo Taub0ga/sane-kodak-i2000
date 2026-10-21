@@ -1,0 +1,145 @@
+# Maintainer: local build
+#
+# Repackages the last official Kodak Alaris Linux driver for the i2000 scanner
+# series (v04.14.00.00, December 2016, closed source, originally shipped as RPM
+# and as alien-converted .deb for Ubuntu 16.04) so that pacman owns the files.
+#
+# The vendor "setup" script is deliberately NOT used: it checks lsb_release
+# against a distribution whitelist (Manjaro is not on it -> exit 4), calls
+# apt-get/alien, does "chmod -R 777 /var/kodak" and patches
+# /etc/udev/rules.d/50-udev-default.rules.  Everything that script does which
+# is actually needed is reproduced here in a reviewable form.
+
+pkgname=kodak-i2000-driver
+pkgver=04.14.00.00
+pkgrel=1
+pkgdesc='Kodak Alaris i2000 series (i2400/i2600/i2800, i2420/i2620/i2820) scanner TWAIN driver with SANE backend shim (proprietary)'
+arch=('x86_64')
+url='https://support.alarisworld.com/'
+license=('LicenseRef-Kodak-Alaris-EULA')
+depends=('glibc' 'gcc-libs' 'systemd-libs' 'sane')
+optdepends=('mono: graphical TWAIN settings dialog (/opt/kodak/kds_i2000/lib/twaingui)'
+            'wireshark-cli: capture the scanner USB traffic via usbmon')
+# !strip is essential: device.so still carries all 4387 C++ symbols, source
+# file names and log line numbers, which is the basis for any reverse
+# engineering work.  Stripping would destroy that and gains nothing.
+options=('!strip' '!debug' 'libtool' 'staticlibs' '!lto' 'emptydirs')
+install="${pkgname}.install"
+source=('kodak_i2000-04.14.00.00-1.amd64.deb'
+        'libopenusb_1.1.13-0_amd64.deb'
+        'twaindsm.deb'
+        'libudev0-shim.c'
+        'clear-execstack.py'
+        'kodak-i2000-ld.conf'
+        'kodak-i2000.tmpfiles'
+        'kds_i2000-dll.conf')
+noextract=('kodak_i2000-04.14.00.00-1.amd64.deb'
+           'libopenusb_1.1.13-0_amd64.deb'
+           'twaindsm.deb')
+sha256sums=('4aad3e5fa1807f1e08b4059c0fce8e15732421ad16a6f42aab6f2519a0ffcc42'
+            '51f9b2308f23a8298975b472f0476ab190af5f2a7a3155ea5bc1f790019a6ba9'
+            '5356fed753e26eab4727e8770795a1fb2ea77576c8c08b195184eceaf831e0f2'
+            'dc203863f8124d72487dc80fd50b57d3f1b70f6d98723e58b21f3a3abfaa5d6a'
+            '89c0dd7c4d1848a899b153b2df130dda9b54a3b4ab68751b059a382048f073cb'
+            '91e84b14decc7be4c9b13e01627dafe3eefaf2e7039d53552ad4b7350b702c21'
+            '4bfba0fe5013b035c8c986868daefb790264bcc42f90087f835701dfe0b6c358'
+            '5bd55458266821e86298d47c901787dc54ddfcd668cadbfcdbdb463eb7a6cfd8')
+
+prepare() {
+  cd "$srcdir"
+  local deb dir
+  for deb in kodak_i2000-04.14.00.00-1.amd64.deb:kodak \
+             libopenusb_1.1.13-0_amd64.deb:openusb \
+             twaindsm.deb:twaindsm; do
+    dir="${deb##*:}"
+    rm -rf "$dir"
+    install -d "$dir"
+    ( cd "$dir" && ar x "$srcdir/${deb%%:*}" && tar -xzf data.tar.gz && rm -f ./*.tar.* debian-binary )
+  done
+}
+
+build() {
+  cd "$srcdir"
+  # SONAME-only forwarding shim, see libudev0-shim.c
+  gcc -shared -fPIC -o libudev.so.0 libudev0-shim.c \
+      -Wl,-soname,libudev.so.0 -Wl,--no-as-needed -ludev
+
+  # The Perfect Page image processing libraries are marked as requiring an
+  # executable stack (PT_GNU_STACK = RWE), almost certainly because the
+  # hand-written SSE assembly they contain has no .note.GNU-stack section.
+  # Since glibc 2.41 the loader refuses to grant that at dlopen() time:
+  #   hippo.so: cannot enable executable stack as shared object requires
+  # which makes the TWAIN data source fail with "lexexe is gone..." and the
+  # SANE open() return SANE_STATUS_INVAL.  Clearing the flag is what
+  # execstack -c / patchelf --clear-execstack would do; neither is packaged
+  # for Arch, so a 60-line script does it.
+  python3 -I clear-execstack.py \
+    kodak/opt/kodak/kds_i2000/lib/hippo.so \
+    kodak/opt/kodak/kds_i2000/lib/libuic_io.so \
+    kodak/opt/kodak/kds_i2000/lib/libuic_jpeg.so
+  python3 -I clear-execstack.py --check \
+    kodak/opt/kodak/kds_i2000/lib/*.so* \
+    kodak/usr/local/lib/twain/kodak/kds_i2000/kds.ds
+}
+
+package() {
+  cd "$srcdir"
+
+  # --- TWAIN driver proper -------------------------------------------------
+  install -d "$pkgdir/opt/kodak"
+  cp -a kodak/opt/kodak/kds_i2000 "$pkgdir/opt/kodak/"
+
+  install -Dm755 kodak/usr/local/lib/twain/kodak/kds_i2000/kds.ds \
+    "$pkgdir/usr/local/lib/twain/kodak/kds_i2000/kds.ds"
+  install -Dm755 kodak/usr/local/bin/deviceprobe_i2000 \
+    "$pkgdir/usr/local/bin/deviceprobe_i2000"
+
+  # --- SANE backend shim ---------------------------------------------------
+  install -Dm755 kodak/usr/lib/sane/libsane-kds_i2000.so.1.0.24 \
+    "$pkgdir/usr/lib/sane/libsane-kds_i2000.so.1.0.24"
+  ln -s libsane-kds_i2000.so.1.0.24 "$pkgdir/usr/lib/sane/libsane-kds_i2000.so.1"
+  ln -s libsane-kds_i2000.so.1.0.24 "$pkgdir/usr/lib/sane/libsane-kds_i2000.so"
+  install -Dm644 kodak/usr/lib/sane/libsane-kds_i2000.lai \
+    "$pkgdir/usr/lib/sane/libsane-kds_i2000.lai"
+  ln -s libsane-kds_i2000.lai "$pkgdir/usr/lib/sane/libsane-kds_i2000.la"
+
+  install -Dm644 kodak/etc/sane.d/kds_i2000.conf "$pkgdir/etc/sane.d/kds_i2000.conf"
+  # Enable the backend without touching the sane package's dll.conf
+  install -Dm644 kds_i2000-dll.conf "$pkgdir/etc/sane.d/dll.d/kodak-i2000"
+
+  # --- libopenusb (hard-coded path /usr/local/lib/libopenusb.so) -----------
+  install -Dm755 openusb/usr/local/lib/libopenusb.so.0.0.13 \
+    "$pkgdir/usr/local/lib/libopenusb.so.0.0.13"
+  ln -s libopenusb.so.0.0.13 "$pkgdir/usr/local/lib/libopenusb.so.0"
+  ln -s libopenusb.so.0.0.13 "$pkgdir/usr/local/lib/libopenusb.so"
+  install -Dm755 openusb/usr/local/lib/openusb_backend/linux.so \
+    "$pkgdir/usr/local/lib/openusb_backend/linux.so"
+  install -Dm644 openusb/usr/local/lib/openusb_backend/linux.la \
+    "$pkgdir/usr/local/lib/openusb_backend/linux.la"
+
+  # --- TWAIN DSM (hard-coded path /usr/local/lib/libtwaindsm.so) -----------
+  install -Dm755 twaindsm/usr/local/lib/libtwaindsm.so.2.3.1 \
+    "$pkgdir/usr/local/lib/libtwaindsm.so.2.3.1"
+  ln -s libtwaindsm.so.2.3.1 "$pkgdir/usr/local/lib/libtwaindsm.so.2"
+  ln -s libtwaindsm.so.2.3.1 "$pkgdir/usr/local/lib/libtwaindsm.so"
+  install -Dm644 twaindsm/usr/local/include/twain.h \
+    "$pkgdir/usr/local/include/twain.h"
+
+  # --- compatibility shim + loader configuration ---------------------------
+  install -Dm755 libudev.so.0 "$pkgdir/usr/local/lib/libudev.so.0"
+  install -Dm644 libudev0-shim.c \
+    "$pkgdir/usr/share/doc/$pkgname/libudev0-shim.c"
+  install -Dm644 kodak-i2000-ld.conf "$pkgdir/etc/ld.so.conf.d/kodak-i2000.conf"
+  install -Dm644 kodak-i2000.tmpfiles \
+    "$pkgdir/usr/lib/tmpfiles.d/kodak-i2000.conf"
+
+  # --- vendor documentation ------------------------------------------------
+  install -Dm644 kodak/usr/share/doc/kodak-i2000/copyright \
+    "$pkgdir/usr/share/licenses/$pkgname/copyright"
+  install -Dm644 kodak/opt/kodak/kds_i2000/lib/botan.txt \
+    "$pkgdir/usr/share/licenses/$pkgname/botan.txt"
+
+  # The vendor uninstall script would try to drive dpkg/rpm on this system.
+  rm -f "$pkgdir/opt/kodak/kds_i2000/install/uninstall.sh"
+  rmdir "$pkgdir/opt/kodak/kds_i2000/install" 2>/dev/null || true
+}

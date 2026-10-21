@@ -1,0 +1,135 @@
+==============================================================================
+captures/usbmon-text/b-simplex-lineart-200.usbmon
+  2562 events total, 2562 for device address 6, 6.986 s
+
+--- 1. endpoint summary (completions only) ---
+endpoint                                      xfers       bytes     min      max   err
+EP0  CONTROL in                                 367        9228       1      256     0
+EP0  CONTROL out                                241       23255       0     2048     0
+EP0x82 BULK IN   (front image / cmd replies)    650    10609596       0    16384     1
+EP0x88 INTR IN                                   23         168       0        8     1
+
+--- 2. control transfers (by setup packet) ---
+  x76   bmRequestType=0x80 bRequest=0x06 wValue=0x0100 wIndex=0x0000 wLength=18
+  x76   bmRequestType=0x80 bRequest=0x06 wValue=0x0200 wIndex=0x0000 wLength=8
+  x76   bmRequestType=0x80 bRequest=0x06 wValue=0x0200 wIndex=0x0000 wLength=53
+  x53   bmRequestType=0x40 bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+  x53   bmRequestType=0x40 bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+  x41   bmRequestType=0xc0 bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+  x26   bmRequestType=0xc0 bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+  x26   bmRequestType=0xc0 bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+  x8    bmRequestType=0x40 bRequest=0xe0 wValue=0x0002 wIndex=0x0000 wLength=1
+  x8    bmRequestType=0x40 bRequest=0xe0 wValue=0x0002 wIndex=0x0001 wLength=1
+  x7    bmRequestType=0x40 bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+  x6    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=32
+  x6    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=32
+  x4    bmRequestType=0xc0 bRequest=0x37 wValue=0x0000 wIndex=0x0000 wLength=64
+  x4    bmRequestType=0xc0 bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+  x3    bmRequestType=0xc0 bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+  x3    bmRequestType=0x40 bRequest=0xe0 wValue=0x0001 wIndex=0x0000 wLength=1
+  x3    bmRequestType=0x40 bRequest=0xe0 wValue=0x0001 wIndex=0x0001 wLength=1
+  x3    bmRequestType=0xc0 bRequest=0x32 wValue=0x0000 wIndex=0x0000 wLength=2
+  x3    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda19 wIndex=0x0000 wLength=1
+  x3    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda1a wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xa3 wValue=0xda27 wIndex=0x0000 wLength=4
+  x2    bmRequestType=0x40 bRequest=0xa3 wValue=0xdb27 wIndex=0x0000 wLength=4
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0005 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0003 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0004 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0005 wIndex=0x0001 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0003 wIndex=0x0001 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xe0 wValue=0x0004 wIndex=0x0001 wLength=1
+  x2    bmRequestType=0x40 bRequest=0x11 wValue=0x0000 wIndex=0x0000 wLength=0
+  x2    bmRequestType=0x40 bRequest=0x62 wValue=0x0104 wIndex=0x0680 wLength=768
+  x2    bmRequestType=0x40 bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+  x2    bmRequestType=0xc0 bRequest=0x33 wValue=0x0000 wIndex=0x0000 wLength=20
+  x2    bmRequestType=0xc0 bRequest=0x35 wValue=0x0001 wIndex=0x0000 wLength=256
+  x2    bmRequestType=0x40 bRequest=0x32 wValue=0x0000 wIndex=0x0000 wLength=2
+  x2    bmRequestType=0x40 bRequest=0x11 wValue=0x0001 wIndex=0x0000 wLength=0
+  x2    bmRequestType=0x40 bRequest=0x45 wValue=0x0000 wIndex=0x0000 wLength=3
+  x2    bmRequestType=0x40 bRequest=0xa3 wValue=0xda06 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0xa3 wValue=0xda07 wIndex=0x0000 wLength=1
+  x2    bmRequestType=0x40 bRequest=0x30 wValue=0x0000 wIndex=0x0000 wLength=120
+  x2    bmRequestType=0x40 bRequest=0x10 wValue=0x0001 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x80 bRequest=0x08 wValue=0x0000 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x00 bRequest=0x09 wValue=0x0001 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0301 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0302 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0x80 bRequest=0x06 wValue=0x0303 wIndex=0x0409 wLength=256
+  x1    bmRequestType=0xc0 bRequest=0x02 wValue=0x0000 wIndex=0x0000 wLength=56
+  x1    bmRequestType=0xc0 bRequest=0x34 wValue=0x0000 wIndex=0x0000 wLength=55
+  x1    bmRequestType=0xc0 bRequest=0x36 wValue=0x0000 wIndex=0x0000 wLength=16
+  x1    bmRequestType=0x40 bRequest=0x1f wValue=0x3086 wIndex=0x81e6 wLength=0
+  x1    bmRequestType=0xc0 bRequest=0x03 wValue=0x0000 wIndex=0x0000 wLength=32
+  x1    bmRequestType=0xc0 bRequest=0xe3 wValue=0x0003 wIndex=0xfc00 wLength=256
+  x1    bmRequestType=0xc0 bRequest=0x45 wValue=0x0000 wIndex=0x0000 wLength=3
+  x1    bmRequestType=0x40 bRequest=0x16 wValue=0x0009 wIndex=0x01ff wLength=0
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xde37 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0x3a wValue=0x0001 wIndex=0x0001 wLength=0
+  x1    bmRequestType=0x40 bRequest=0x1b wValue=0x0000 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x40 bRequest=0x31 wValue=0x0000 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda27 wIndex=0x0000 wLength=4
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xdb27 wIndex=0x0000 wLength=4
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0000 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0200 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0400 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0600 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0800 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0a00 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0c00 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xe5 wValue=0x0000 wIndex=0x0e00 wLength=2048
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda2f wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda2c wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda2d wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda2e wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xe4 wValue=0x0002 wIndex=0x0000 wLength=1024
+  x1    bmRequestType=0x40 bRequest=0xe4 wValue=0x0003 wIndex=0x0000 wLength=1024
+  x1    bmRequestType=0x40 bRequest=0xe4 wValue=0x0001 wIndex=0x0000 wLength=1024
+  x1    bmRequestType=0x40 bRequest=0xe4 wValue=0x0000 wIndex=0x0000 wLength=1024
+  x1    bmRequestType=0x40 bRequest=0x37 wValue=0x0000 wIndex=0x0000 wLength=64
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd900 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd903 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd904 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd905 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd906 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd907 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xd920 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xdc00 wIndex=0x0000 wLength=78
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=3
+  x1    bmRequestType=0xc0 bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=3
+  x1    bmRequestType=0x40 bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=3
+  x1    bmRequestType=0xc0 bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=3
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda2b wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda04 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda05 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda08 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda09 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda01 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda25 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda0c wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda0d wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda0a wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda0b wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda02 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda03 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda11 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda12 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda11 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda12 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda13 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda14 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda15 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xda16 wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xdd0b wIndex=0x0000 wLength=1
+  x1    bmRequestType=0xc0 bRequest=0xa3 wValue=0xdd0a wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xdd0a wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0x17 wValue=0x0001 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x40 bRequest=0x10 wValue=0x0000 wIndex=0x0000 wLength=0
+  x1    bmRequestType=0x40 bRequest=0xa3 wValue=0xda0e wIndex=0x0000 wLength=1
+  x1    bmRequestType=0x40 bRequest=0x3a wValue=0x0001 wIndex=0x0000 wLength=0
+
+--- 4. OUT command histograms ---
+  first two bytes: (none)
+  lengths        : (none)

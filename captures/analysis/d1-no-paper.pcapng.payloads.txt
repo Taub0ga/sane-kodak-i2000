@@ -1,0 +1,273 @@
+captures/pcapng/d1-no-paper.pcapng: 96 vendor control requests, device 6
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 f5 81 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 f6 81 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 f7 81 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x02 wValue=0x0000 wIndex=0x0000 wLength=56
+      0000  00 04 01 0d 00 04 01 0e 00 01 02 0f 00 1f 00 00  |................|
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0030  00 00 00 00 00 00 00 00                          |........|
+
+  x1    IN  bRequest=0x34 wValue=0x0000 wIndex=0x0000 wLength=55
+      0000  04 0a 60 1d 00 03 00 4b 4f 44 41 4b 20 20 20 20  |..`....KODAK    |
+      0010  20 00 00 00 00 00 00 69 32 36 30 30 20 53 43 41  | ......i2600 SCA|
+      0020  4e 4e 45 52 00 00 00 00 00 00 00 00 00 00 00 00  |NNER............|
+      0030  00 00 00 00 00 00 00                             |.......|
+
+  x1    IN  bRequest=0x36 wValue=0x0000 wIndex=0x0000 wLength=16
+      0000  30 30 30 30 30 30 30 30 34 38 37 38 35 39 34 32  |0000000048785942|
+
+  x3    IN  bRequest=0x37 wValue=0x0000 wIndex=0x0000 wLength=64
+      0000  01 aa 00 00 06 06 a3 8d 80 46 a3 8d 80 46 06 06  |.........F...F..|
+      0010  12 c4 c2 41 12 c4 c2 41 94 77 84 72 94 77 84 72  |...A...A.w.r.w.r|
+      0020  12 fb 67 6f 12 fb 67 6f a9 88 20 a2 a9 88 20 a2  |..go..go.. ... .|
+      0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+
+  x1    OUT bRequest=0x1f wValue=0x3086 wIndex=0x888a wLength=0
+
+  x1    IN  bRequest=0x03 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  98 66 84 03 77 01 00 00 00 00 00 00 00 00 00 00  |.f..w...........|
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+
+  x2    IN  bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+      0000  32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32  |2014/02/13 10:32|
+      0010  3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad  |:04:056.....'.'.|
+      0020  27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36  |'P'..........u.6|
+      0030  0c 32 0c 08 00 2d 00 f6 09 ec 09 05 ff 01 07 ff  |.2...-..........|
+      0040  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+
+  x1    OUT bRequest=0xa3 wValue=0xda27 wIndex=0x0000 wLength=4
+      0000  00 00 00 01                                      |....|
+
+  x1    OUT bRequest=0xa3 wValue=0xdb27 wIndex=0x0000 wLength=4
+      0000  00 00 00 01                                      |....|
+
+  x1    IN  bRequest=0xe3 wValue=0x0003 wIndex=0xfc00 wLength=256
+      0000  aa 03 b5 00 85 00 c6 00 00 00 00 00 00 00 bc 00  |................|
+      0010  8d 00 c9 00 00 00 00 00 00 00 a7 00 a7 00 00 00  |................|
+      0020  00 00 aa 00 aa 00 00 00 00 00 b7 00 88 00 c8 00  |................|
+      0030  00 00 00 00 00 00 bc 00 8e 00 ca 00 00 00 00 00  |................|
+      0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0050  00 00 40 01 40 01 4b 01 41 01 68 01 6e 01 82 01  |..@.@.K.A.h.n...|
+      0060  7f 01 4c 01 4c 01 59 01 00 00 5c 01 62 01 79 01  |..L.L.Y...\.b.y.|
+      0070  00 00 2e 05 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0080  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0090  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      00a0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      00b0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      00c0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      00d0  00 00 00 00 00 00 00 00 00 00 0a 00 17 00 dd 07  |................|
+      00e0  0f 00 04 00 2f 00 00 00 00 00 00 00 00 00 00 00  |..../...........|
+      00f0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+      0000  24                                               |$|
+
+  x1    OUT bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+      0000  20                                               | |
+
+  x2    OUT bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  00                                               |.|
+
+  x1    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  00                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0002 wIndex=0x0000 wLength=1
+      0000  20                                               | |
+
+  x2    OUT bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  02                                               |.|
+
+  x1    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  02                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0005 wIndex=0x0000 wLength=1
+      0000  00                                               |.|
+
+  x10   OUT bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  03                                               |.|
+
+  x5    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0000 wLength=1
+      0000  03                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0000 wIndex=0x0000 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0001 wIndex=0x0000 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0002 wIndex=0x0000 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0003 wIndex=0x0000 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0004 wIndex=0x0000 wLength=1
+      0000  88                                               |.|
+
+  x2    OUT bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  00                                               |.|
+
+  x1    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  00                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0002 wIndex=0x0001 wLength=1
+      0000  20                                               | |
+
+  x2    OUT bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  02                                               |.|
+
+  x1    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  02                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0005 wIndex=0x0001 wLength=1
+      0000  00                                               |.|
+
+  x10   OUT bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  03                                               |.|
+
+  x5    IN  bRequest=0xe0 wValue=0x001f wIndex=0x0001 wLength=1
+      0000  03                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0000 wIndex=0x0001 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0001 wIndex=0x0001 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0002 wIndex=0x0001 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0003 wIndex=0x0001 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xe0 wValue=0x0004 wIndex=0x0001 wLength=1
+      0000  88                                               |.|
+
+  x1    OUT bRequest=0xa3 wValue=0xd901 wIndex=0x0000 wLength=1
+      0000  24                                               |$|
+
+  x1    IN  bRequest=0x45 wValue=0x0000 wIndex=0x0000 wLength=3
+      0000  02 00 00                                         |...|
+
+  x1    OUT bRequest=0x11 wValue=0x0000 wIndex=0x0000 wLength=0
+
+  x1    IN  bRequest=0x32 wValue=0x0000 wIndex=0x0000 wLength=2
+      0000  0e 3c                                            |.<|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 ae 82 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    OUT bRequest=0x62 wValue=0x0104 wIndex=0x0680 wLength=768
+      0000  00 c0 40 40 40 40 80 00 00 00 00 00 00 00 00 00  |..@@@@..........|
+      0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0030  00 00 00 00 00 e0 00 00 00 00 00 00 00 00 00 00  |................|
+      0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0060  00 00 00 00 00 00 00 00 00 c0 00 00 00 00 00 00  |................|
+      0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+      0080  00 7f 04 04 04 0c 33 40 00 3e 6b 49 49 4b 2e 00  |......3@.>kIIK..|
+      0090  26 49 49 49 32 00 3e 63 41 41 22 00 00 32 49 49  |&III2.>cAA"..2II|
+      00a0  49 29 7e 00 7f 02 01 01 01 7e 00 00 00 00 00 00  |I)~......~......|
+      00b0  3e 63 41 41 63 7f 00 00 3e 63 41 41 63 3e 00 3e  |>cAAc...>cAAc>.>|
+      00c0  63 41 41 22 00 00 3f 40 40 40 20 7f 00 00 7f 01  |cAA"..?@@@ .....|
+      00d0  01 01 7e 01 01 01 7e 00 00 00 3e 6b 49 49 4b 2e  |..~...~...>kIIK.|
+      00e0  00 7f 02 01 01 01 7e 00 01 7f 41 41 00 00 26 49  |......~...AA..&I|
+      00f0  49 49 32 00 00 00 00 00 00 00 00 00 00 00 00 00  |II2.............|
+      ... 512 more bytes
+
+  x1    OUT bRequest=0x35 wValue=0x0000 wIndex=0x0000 wLength=128
+      0000  32 30 31 34 2f 30 32 2f 31 33 20 31 30 3a 33 32  |2014/02/13 10:32|
+      0010  3a 30 34 3a 30 35 36 00 09 00 00 85 27 8d 27 ad  |:04:056.....'.'.|
+      0020  27 50 27 00 00 00 00 00 00 00 00 85 03 75 01 36  |'P'..........u.6|
+      0030  0c 32 0c 08 00 2d 00 f6 09 ec 09 05 ff 01 07 ff  |.2...-..........|
+      0040  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+
+  x1    OUT bRequest=0x16 wValue=0x0009 wIndex=0x01ff wLength=0
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 e5 82 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0xa3 wValue=0xde37 wIndex=0x0000 wLength=1
+      0000  00                                               |.|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 55 83 1b 00 03 01 00 01  |........U.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 57 83 1b 00 03 01 00 01  |........W.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x33 wValue=0x0000 wIndex=0x0000 wLength=20
+      0000  f7 c4 06 00 60 1c 0b 00 60 1c 0b 00 8f 03 58 00  |....`...`.....X.|
+      0010  72 6b 09 00                                      |rk..|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 59 83 1b 00 03 01 00 01  |........Y.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 5a 83 1b 00 03 01 00 01  |........Z.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 5b 83 1b 00 03 01 00 01  |........[.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 5d 83 1b 00 03 01 00 01  |........].......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 70 83 1b 00 03 01 00 01  |........p.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x35 wValue=0x0001 wIndex=0x0000 wLength=256
+      0000  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0010  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0020  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0030  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0040  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0080  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      0090  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00a0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00b0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00c0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00d0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00e0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+      00f0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 e0 83 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 e2 83 1b 00 03 01 00 01  |................|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|
+
+  x1    IN  bRequest=0x00 wValue=0x0000 wIndex=0x0000 wLength=32
+      0000  03 00 01 02 0f 00 09 00 4c 84 1b 00 03 01 00 01  |........L.......|
+      0010  02 00 00 01 09 00 00 01 01 00 ff 00 00 00 00 00  |................|

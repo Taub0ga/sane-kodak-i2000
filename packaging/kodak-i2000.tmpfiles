@@ -1,0 +1,21 @@
+# Runtime state and log directories for the Kodak i2000 TWAIN driver.
+#
+# The driver creates these at run time as whichever user scans:
+#   kds_i2000/device/usb040a601d<serial>.lock   device lock, taken on every
+#                                               open; without it the TWAIN DS
+#                                               fails with TWCC_NODS and SANE
+#                                               reports SANE_STATUS_INVAL
+#   kds_i2000/twain/log.<timestamp>/<module>/   per-module debug logs
+#   kds_i2000/profiles/profile.share            shared scan profiles
+#   kds_i2000/sanetwain/sanetwain_N.log         log of the SANE shim
+#
+# Mode 1777 (sticky, like /tmp) instead of the vendor's "chmod -R 777":
+# every user can create their files, nobody can delete or replace another
+# user's.  /var/kodak itself stays root-owned and non-writable.
+d /var/kodak                     0755 root root -
+d /var/kodak/common              1777 root root -
+d /var/kodak/kds_i2000           1777 root root -
+d /var/kodak/kds_i2000/device    1777 root root -
+d /var/kodak/kds_i2000/twain     1777 root root -
+d /var/kodak/kds_i2000/profiles  1777 root root -
+d /var/kodak/kds_i2000/sanetwain 1777 root root -

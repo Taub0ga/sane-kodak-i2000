@@ -1,0 +1,114 @@
+=== a-open-close.pcapng
+=== b-simplex-lineart-200.pcapng
+  ep 0x82 block 1: 51824 bytes, last transfer 2672
+      @2671   0xff JunkWords=94 x2 -> 188 junk bytes
+      @2479   0xfe Format=1
+      @2475   0xfd Type=1
+      @2471   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @2467   0xfa XRes code=2 -> 300 dpi
+      @2463   0xf9 YRes code=2 -> 300 dpi
+      @2459   0xf6 Segment=0 LastSegment=False
+      @2449   0xf5 DocumentCount=1
+      @2449   0x01 FOOTER START -> 224 footer bytes
+      fields: {'JunkWords': 94, 'Format': 1, 'Type': 1, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 1, 'footer_bytes': 224}
+      image data = 51824 - 224 = 51600 bytes
+      51600 / 2580 bytes per line = 20 lines
+      block length mod 508 = 8
+  ep 0x82 block 2: 10421120 bytes, last transfer 896
+      @895    0xff JunkWords=232 x2 -> 464 junk bytes
+      @427    0xfe Format=1
+      @423    0xfd Type=0
+      @419    0xfc Width=1290 pixel pairs -> 2580 pixels
+      @415    0xfa XRes code=2 -> 300 dpi
+      @411    0xf9 YRes code=2 -> 300 dpi
+      @407    0xf6 Segment=0 LastSegment=False
+      @397    0xf5 DocumentCount=2
+      @397    0x01 FOOTER START -> 500 footer bytes
+      fields: {'JunkWords': 232, 'Format': 1, 'Type': 0, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 2, 'footer_bytes': 500}
+      image data = 10421120 - 500 = 10420620 bytes
+      10420620 / 2580 bytes per line = 4039 lines
+      block length mod 508 = 8
+  ep 0x82 block 3: 10516624 bytes, last transfer 14480 TRUNCATED in capture
+=== c-duplex-lineart-200.pcapng
+  ep 0x82 block 1: 51824 bytes, last transfer 2672
+      @2671   0xff JunkWords=94 x2 -> 188 junk bytes
+      @2479   0xfe Format=1
+      @2475   0xfd Type=1
+      @2471   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @2467   0xfa XRes code=2 -> 300 dpi
+      @2463   0xf9 YRes code=2 -> 300 dpi
+      @2459   0xf6 Segment=0 LastSegment=False
+      @2449   0xf5 DocumentCount=1
+      @2449   0x01 FOOTER START -> 224 footer bytes
+      fields: {'JunkWords': 94, 'Format': 1, 'Type': 1, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 1, 'footer_bytes': 224}
+      image data = 51824 - 224 = 51600 bytes
+      51600 / 2580 bytes per line = 20 lines
+      block length mod 508 = 8
+  ep 0x82 block 2: 10335776 bytes, last transfer 13856 TRUNCATED in capture
+  ep 0x82 block 3: 10402832 bytes, last transfer 15376 TRUNCATED in capture
+  ep 0x82 block 4: 10503416 bytes, last transfer 1272
+      @1271   0xff JunkWords=100 x2 -> 200 junk bytes
+      @1067   0xfe Format=1
+      @1063   0xfd Type=0
+      @1059   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @1055   0xfa XRes code=2 -> 300 dpi
+      @1051   0xf9 YRes code=2 -> 300 dpi
+      @1047   0xf6 Segment=0 LastSegment=False
+      @1037   0xf5 DocumentCount=4
+      @1037   0x01 FOOTER START -> 236 footer bytes
+      fields: {'JunkWords': 100, 'Format': 1, 'Type': 0, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 4, 'footer_bytes': 236}
+      image data = 10503416 - 236 = 10503180 bytes
+      10503180 / 2580 bytes per line = 4071 lines
+      block length mod 508 = 8
+  ep 0x86 block 1: 51824 bytes, last transfer 2672
+      @2671   0xff JunkWords=94 x2 -> 188 junk bytes
+      @2479   0xfe Format=1
+      @2475   0xfd Type=1
+      @2471   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @2467   0xfa XRes code=2 -> 300 dpi
+      @2463   0xf9 YRes code=2 -> 300 dpi
+      @2459   0xf6 Segment=0 LastSegment=False
+      @2449   0xf5 DocumentCount=1
+      @2449   0x01 FOOTER START -> 224 footer bytes
+      fields: {'JunkWords': 94, 'Format': 1, 'Type': 1, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 1, 'footer_bytes': 224}
+      image data = 51824 - 224 = 51600 bytes
+      51600 / 2580 bytes per line = 20 lines
+      block length mod 508 = 8
+  ep 0x86 block 2: 10309868 bytes, last transfer 4332 TRUNCATED in capture
+  ep 0x86 block 3: 10382004 bytes, last transfer 10932 TRUNCATED in capture
+  ep 0x86 block 4: 10480048 bytes, last transfer 10672 TRUNCATED in capture
+=== d1-no-paper.pcapng
+=== e-simplex-lineart-300.pcapng
+  ep 0x82 block 1: 51824 bytes, last transfer 2672
+      @2671   0xff JunkWords=94 x2 -> 188 junk bytes
+      @2479   0xfe Format=1
+      @2475   0xfd Type=1
+      @2471   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @2467   0xfa XRes code=2 -> 300 dpi
+      @2463   0xf9 YRes code=2 -> 300 dpi
+      @2459   0xf6 Segment=0 LastSegment=False
+      @2449   0xf5 DocumentCount=1
+      @2449   0x01 FOOTER START -> 224 footer bytes
+      fields: {'JunkWords': 94, 'Format': 1, 'Type': 1, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 1, 'footer_bytes': 224}
+      image data = 51824 - 224 = 51600 bytes
+      51600 / 2580 bytes per line = 20 lines
+      block length mod 508 = 8
+  ep 0x82 block 2: 10449060 bytes, last transfer 12452 TRUNCATED in capture
+  ep 0x82 block 3: 10449060 bytes, last transfer 12452 TRUNCATED in capture
+=== f-simplex-gray-200.pcapng
+  ep 0x82 block 1: 51824 bytes, last transfer 2672
+      @2671   0xff JunkWords=94 x2 -> 188 junk bytes
+      @2479   0xfe Format=1
+      @2475   0xfd Type=1
+      @2471   0xfc Width=1290 pixel pairs -> 2580 pixels
+      @2467   0xfa XRes code=2 -> 300 dpi
+      @2463   0xf9 YRes code=2 -> 300 dpi
+      @2459   0xf6 Segment=0 LastSegment=False
+      @2449   0xf5 DocumentCount=1
+      @2449   0x01 FOOTER START -> 224 footer bytes
+      fields: {'JunkWords': 94, 'Format': 1, 'Type': 1, 'WidthPairs': 1290, 'WidthPixels': 2580, 'XResCode': 2, 'XResDpi': 300, 'YResCode': 2, 'YResDpi': 300, 'Segment': 0, 'LastSegment': False, 'DocumentCount': 1, 'footer_bytes': 224}
+      image data = 51824 - 224 = 51600 bytes
+      51600 / 2580 bytes per line = 20 lines
+      block length mod 508 = 8
+  ep 0x82 block 2: 10495796 bytes, last transfer 10036 TRUNCATED in capture
+  ep 0x82 block 3: 10480048 bytes, last transfer 10672 TRUNCATED in capture

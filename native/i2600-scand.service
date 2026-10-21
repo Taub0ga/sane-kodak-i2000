@@ -1,0 +1,46 @@
+# Press the green button on the Kodak i2600, get a PDF in paperless' consume
+# directory.  A user unit: the scanner's device node carries an ACL for the
+# logged-in user (sane-backends' hwdb entry plus 70-uaccess.rules), so no root
+# and no udev rule of our own are needed.
+#
+#   systemctl --user enable --now i2600-scand.service
+#
+# Point I2600_CONSUME_DIR at the consume directory with
+#   systemctl --user edit i2600-scand.service
+# and an override that sets Environment=I2600_CONSUME_DIR=/path/to/consume
+#
+# The scanner has to sit on an Intel USB port; the ASMedia controller on this
+# machine does not enumerate it.
+
+[Unit]
+Description=Kodak i2600 button-to-paperless scan daemon
+# The daemon waits for the scanner itself rather than exiting, but a power
+# cycle still ends the process once; without this systemd could give up after
+# a few of those and the scanner would stay dead until someone noticed.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Environment=I2600_CONSUME_DIR=%h/paperless-consume
+# Colour duplex, and the blank back of a one-sided sheet left out.  Change
+# these with `systemctl --user edit` and an override that sets
+# I2600_SCAND_OPTS, rather than by editing this file.
+Environment="I2600_SCAND_OPTS=--color --duplex"
+ExecStart=/usr/bin/i2600-scand $I2600_SCAND_OPTS
+# Switching the scanner off at its power switch -- the usual cure for a paper
+# jam -- makes it vanish from the bus, and switching it on again enumerates a
+# NEW device the running process cannot reach.  So the daemon exits on that,
+# and the restart is what picks the scanner up again: the fresh process finds
+# it cold and downloads the firmware like any other cold start.  Same for an
+# unplugged cable or a scan held by another program.
+# 75 is EX_TEMPFAIL, which the daemon uses when the scanner was switched off.
+# Counting it as a normal end keeps a cleared paper jam out of the journal as
+# a failure, while a real error still shows up as one.
+SuccessExitStatus=75
+Restart=always
+# Short, because the new process does not busy-wait: it blocks on a libusb
+# hotplug callback until the scanner is back and its udev ACL is in place.
+RestartSec=2
+
+[Install]
+WantedBy=default.target

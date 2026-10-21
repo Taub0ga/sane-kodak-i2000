@@ -1,0 +1,30 @@
+# Hersteller-Software -- nicht unsere, nicht weiterzugeben.  Der Treiber holt
+# seine Firmware-Images aus devicemanager.so im Kodak-Paket; wer das Projekt
+# baut, besorgt sich das Paket selbst.  Siehe README.
+*.deb
+*.tar.gz
+*.pkg.tar.xz
+/setup
+
+# Gescannte Bilder: 80 MB, jederzeit neu erzeugbar.
+captures/scans/
+
+# captures/pcapng bleibt absichtlich drin: die usbmon-Mitschnitte sind die
+# Beweisgrundlage des Projekts, und native/gen-*.py erzeugen die
+# Sequenz-Header daraus.  Ohne sie ist nichts nachvollziehbar.
+
+# Bauergebnisse
+native/i2600-grab
+native/i2600-status
+native/i2600-nvram
+native/i2600-buttons
+native/i2600-lcd
+native/i2600-power
+native/i2600-calibrate
+native/i2600-scand
+native/libsane-i2600.so*
+native/.sane.d/
+*.o
+
+__pycache__/
+*.pyc

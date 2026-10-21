@@ -1,0 +1,46 @@
+bLength                18
+bDescriptorType         1
+bcdUSB               2.00
+idVendor           0x040a Kodak Co.
+idProduct          0x601d i2600 SCANNER
+iProduct                2 i2600 SCANNER
+iSerial                 3 0000000000000000
+bLength                 9
+bDescriptorType         2
+bNumInterfaces          1
+bLength                 9
+bDescriptorType         4
+bInterfaceClass       255 Vendor Specific Class
+bLength                 7
+bDescriptorType         5
+bEndpointAddress     0x81  EP 1 IN
+Transfer Type            Interrupt
+wMaxPacketSize     0x0008  1x 8 bytes
+bInterval              10
+bLength                 7
+bDescriptorType         5
+bEndpointAddress     0x02  EP 2 OUT
+Transfer Type            Bulk
+wMaxPacketSize     0x0200  1x 512 bytes
+bInterval               0
+bLength                 7
+bDescriptorType         5
+bEndpointAddress     0x82  EP 2 IN
+Transfer Type            Bulk
+wMaxPacketSize     0x0200  1x 512 bytes
+bInterval               0
+bLength                 7
+bDescriptorType         5
+bEndpointAddress     0x86  EP 6 IN
+Transfer Type            Bulk
+wMaxPacketSize     0x0200  1x 512 bytes
+bInterval               0
+bLength                 7
+bDescriptorType         5
+bEndpointAddress     0x88  EP 8 IN
+Transfer Type            Interrupt
+wMaxPacketSize     0x0008  1x 8 bytes
+bInterval              10
+bLength                10
+bDescriptorType         6
+bcdUSB               2.00

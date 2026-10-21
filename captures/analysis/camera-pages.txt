@@ -1,0 +1,116 @@
+##### b-simplex-lineart-200
+=== camera 0 (front/master), 192 bytes written in pages 0..5
+    s_dmcamerags300masterDT        differing bytes:   0 / 192
+    s_dmcamerags300slaveDT         differing bytes:   1 / 192
+    s_dmcamerags300master          differing bytes:  23 / 192
+    s_dmcamerags300slave           differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300masterDT
+=== camera 1 (rear/slave), 192 bytes written in pages 0..5
+    s_dmcamerags300slaveDT         differing bytes:   0 / 192
+    s_dmcamerags300masterDT        differing bytes:   1 / 192
+    s_dmcamerags300slave           differing bytes:  23 / 192
+    s_dmcamerags300master          differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300slaveDT
+##### c-duplex-lineart-200
+=== camera 0 (front/master), 192 bytes written in pages 0..5
+    s_dmcamerags300masterDT        differing bytes:   0 / 192
+    s_dmcamerags300slaveDT         differing bytes:   1 / 192
+    s_dmcamerags300master          differing bytes:  23 / 192
+    s_dmcamerags300slave           differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300masterDT
+=== camera 1 (rear/slave), 192 bytes written in pages 0..5
+    s_dmcamerags300slaveDT         differing bytes:   0 / 192
+    s_dmcamerags300masterDT        differing bytes:   1 / 192
+    s_dmcamerags300slave           differing bytes:  23 / 192
+    s_dmcamerags300master          differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300slaveDT
+##### e-simplex-lineart-300
+=== camera 0 (front/master), 192 bytes written in pages 0..5
+    s_dmcamerags300masterDT        differing bytes:   0 / 192
+    s_dmcamerags300slaveDT         differing bytes:   1 / 192
+    s_dmcamerags300master          differing bytes:  23 / 192
+    s_dmcamerags300slave           differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300masterDT
+=== camera 1 (rear/slave), 192 bytes written in pages 0..5
+    s_dmcamerags300slaveDT         differing bytes:   0 / 192
+    s_dmcamerags300masterDT        differing bytes:   1 / 192
+    s_dmcamerags300slave           differing bytes:  23 / 192
+    s_dmcamerags300master          differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300slaveDT
+##### f-simplex-gray-200
+=== camera 0 (front/master), 192 bytes written in pages 0..5
+    s_dmcamerags300masterDT        differing bytes:   0 / 192
+    s_dmcamerags300slaveDT         differing bytes:   1 / 192
+    s_dmcamerags300master          differing bytes:  23 / 192
+    s_dmcamerags300slave           differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300masterDT
+=== camera 1 (rear/slave), 192 bytes written in pages 0..5
+    s_dmcamerags300slaveDT         differing bytes:   0 / 192
+    s_dmcamerags300masterDT        differing bytes:   1 / 192
+    s_dmcamerags300slave           differing bytes:  23 / 192
+    s_dmcamerags300master          differing bytes:  24 / 192
+    s_dmcameracolor600masterDT     differing bytes:  40 / 192
+    s_dmcameracolor600slaveDT      differing bytes:  40 / 192
+    s_dmcameracolor600master       differing bytes:  53 / 192
+    s_dmcameracolor600slave        differing bytes:  53 / 192
+    s_dmcameracolor300masterDT     differing bytes:  54 / 192
+    s_dmcameracolor300slaveDT      differing bytes:  54 / 192
+    s_dmcameracolor300master       differing bytes:  57 / 192
+    s_dmcameracolor300slave        differing bytes:  58 / 192
+    --> closest: s_dmcamerags300slaveDT
