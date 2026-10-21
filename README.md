@@ -109,7 +109,7 @@ Die Belegmarker durchgehend: **[M]** gemessen, **[C]** aus Herstellercode,
 
 ## Lizenz und Herkunft
 
-GPL-2.0-or-later, siehe [`COPYING`](COPYING).
+GPL-2.0-or-later, siehe [`LICENSE`](LICENSE).
 
 Der Treiber wurde aus usbmon-Mitschnitten und aus den nicht gestrippten
 Bibliotheken des Herstellers erschlossen. **Es ist kein Herstellercode
