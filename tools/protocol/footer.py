@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Decode the image footer of every fully captured image block of a pcapng.
 
 Reimplements DeviceManager::Image::ParseImageFooter() (devicemanager.so 0x11af30).

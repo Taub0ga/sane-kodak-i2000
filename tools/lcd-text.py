@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Render a line or two of text into the i2600 panel's bitmap format.
 
 The operator panel is a 128x48 graphical LCD in the usual page layout: six

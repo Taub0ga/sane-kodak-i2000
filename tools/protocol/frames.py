@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import sys
 from usbmon import read, hx
 us = read(sys.argv[1], dev=6)

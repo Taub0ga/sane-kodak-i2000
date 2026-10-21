@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import sys, collections
 from ctrl import transfers
 names = ['a-open-close','b-simplex-lineart-200','c-duplex-lineart-200',

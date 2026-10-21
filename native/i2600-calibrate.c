@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * i2600-calibrate -- look at the scanner's per-pixel shading calibration and,
  * on request, reload it from the device's own flash into its SRAM.

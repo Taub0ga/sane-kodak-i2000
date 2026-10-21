@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Read the panel bitmaps back out of a capture, as text.
 
 lcd-text.py renders text into the 768-byte panel format; this does the

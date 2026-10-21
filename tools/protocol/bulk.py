@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import sys, collections
 from usbmon import read, XFER
 for path in sys.argv[1:]:

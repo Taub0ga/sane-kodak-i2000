@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * i2600-grab -- fetch a raw image from a Kodak i2600 without the vendor driver.
  *

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * Forwarding shim for libudev.so.0.
  *

@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * i2600-grab -- fetch raw images from a Kodak i2600 without any Kodak
  * library.  The device half lives in i2600-core.c; this file is the command

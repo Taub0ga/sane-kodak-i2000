@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * i2600-status -- read the scanner's 32-byte status block (vendor request
  * 0x00 IN) and decode the bytes that Scanner::IsOkToStartScan() checks.

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Summarise a usbmon capture of the Kodak i2600.
 
 Reads either usbmon's debugfs text format (.usbmon), whose payloads are

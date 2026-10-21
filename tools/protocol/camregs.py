@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Name the bRequest 0xe0 accesses of a capture (camera device / AFE device).
 
 0xe0 is DeviceSettings::Read/WriteAfeDevice and Read/WriteCameraDevice:

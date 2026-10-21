@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 # Keep the scanner open for a while so its interrupt endpoints get polled, so
 # that pressing a button on the operator panel shows up in a usbmon capture.
 #

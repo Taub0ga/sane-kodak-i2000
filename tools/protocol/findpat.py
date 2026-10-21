@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import sys
 pats = {
  '0x62 table dl (40 62 04 01 80 06 00 03)': bytes.fromhex('40620401800600 03'.replace(' ','')),

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import math, collections
 from usbmon import read, hx
 names = ['b-simplex-lineart-200','c-duplex-lineart-200','e-simplex-lineart-300','f-simplex-gray-200']

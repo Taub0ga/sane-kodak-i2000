@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Emulate i2600_autocrop + page_ink_percent on a PGM: what would i2600-scand
 decide about this page?
 

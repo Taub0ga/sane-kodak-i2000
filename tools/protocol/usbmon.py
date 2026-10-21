@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Minimal reader for pcapng captures of Linux usbmon (LINKTYPE_USB_LINUX_MMAPPED=220)."""
 import struct, sys
 

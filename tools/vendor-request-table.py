@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Build a table of the vendor-specific control requests across captures.
 
 Usage:  vendor-request-table.py capture.usbmon...

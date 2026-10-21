@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * libsane-i2600 -- a SANE backend for the Kodak i2600, on top of i2600-core.
  *

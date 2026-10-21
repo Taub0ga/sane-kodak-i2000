@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import re
 lines = open('dm.dis').read().splitlines()
 fn = None; funcs = []

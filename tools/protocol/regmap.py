@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import struct, subprocess, sys, re
 path = 'driver/opt/kodak/kds_i2000/lib/devicemanager.so'
 data = open(path,'rb').read()

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Annotated static trace of a function from devicemanager.so.
 
 For every call instruction inside a function it prints the callee, the string

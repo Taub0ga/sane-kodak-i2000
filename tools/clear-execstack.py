@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Clear the executable-stack flag (PT_GNU_STACK p_flags &= ~PF_X) in ELF files.
 
 hippo.so, libuic_io.so and libuic_jpeg.so from the Kodak driver are marked

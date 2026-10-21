@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Decode the 120-byte SDmScanConfig block of bRequest 0x30 from a capture.
 
 Field offsets come from the one-instruction setters of

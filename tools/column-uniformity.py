@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Measure vertical streaking in a PGM/PNM: column means over the inner area.
 
 Usage:  column-uniformity.py scan.pgm [inset]

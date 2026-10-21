@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 from usbmon import read
 from collections import Counter
 us = read("/home/tauboga/Projekte/Kodak i2600/captures/pcapng/b-simplex-lineart-200.pcapng", dev=6)

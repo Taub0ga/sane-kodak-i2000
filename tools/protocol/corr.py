@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import statistics, itertools
 from usbmon import read
 base = "/home/tauboga/Projekte/Kodak i2600/captures/pcapng/%s.pcapng"

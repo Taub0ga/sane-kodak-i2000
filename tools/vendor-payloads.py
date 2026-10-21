@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Dump the payload of every vendor control request in a pcapng capture.
 
 Usage:  vendor-payloads.py capture.pcapng [--device N] [--max-bytes N]

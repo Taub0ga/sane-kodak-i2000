@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 """Compare the six 32-byte camera pages of a capture against the static tables
 s_dmcamera{color,gs}{300,600}{master,slave}[DT] in devicemanager.so.
 

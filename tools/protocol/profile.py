@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 import sys, statistics
 from usbmon import read
 path = sys.argv[1]; ep = int(sys.argv[2], 16)

@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 # Root-side helper for usbmon captures.
 #
 #   sudo tools/usbmon-daemon.sh <ctrl-dir>

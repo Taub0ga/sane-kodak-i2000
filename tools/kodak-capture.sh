@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026 Thomas Parthe
 # Capture the USB traffic of one Kodak scanner operation with usbmon.
 #
 #   sudo tools/kodak-capture.sh <label> <command...>

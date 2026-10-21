@@ -1,3 +1,5 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* Copyright (C) 2026 Thomas Parthe */
 /*
  * i2600-core -- the device half of the Kodak i2600 support: USB transport,
  * the vendor sequence, image blocks and their footer.  Both the i2600-grab
