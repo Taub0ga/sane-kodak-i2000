@@ -89,12 +89,6 @@ stattdessen eine System-Unit als root.
 | `i2600-lcd` | Bitmap ins Bedienfeld-Display |
 | `i2600-buttons` | Tastendrücke mitlesen |
 
-## Hardware-Hinweise
-
-Der Scanner muss an einem **Intel-USB-Port** hängen. Am ASMedia-Controller
-(ASM1042A) meldet er ungültige Port-IDs und enumeriert nie — das kostet sonst
-einen Abend. Ein Papierstau löst sich meist nur über den Netzschalter.
-
 ## Dokumentation
 
 | | |
