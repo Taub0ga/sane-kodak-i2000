@@ -12,6 +12,7 @@
 #define I2600_CORE_H
 
 #include <stddef.h>
+#include <signal.h>
 #include <stdint.h>
 
 #define KODAK_VID       0x040a
@@ -86,6 +87,8 @@ int  i2600_device_gone(void);
  * forever.  Lets a daemon sit through a power cycle instead of exiting and
  * being restarted on a timer.
  */
+/* Set from a signal handler to break i2600_wait_for_device(). */
+extern volatile sig_atomic_t i2600_abort_wait;
 int  i2600_wait_for_device(unsigned timeout_s);
 
 /* One reference ("shutter") pass: 20 lines, no paper movement. */

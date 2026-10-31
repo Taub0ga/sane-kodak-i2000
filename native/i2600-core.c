@@ -22,6 +22,7 @@
 #include <getopt.h>
 #include <pthread.h>
 #include <stdarg.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -1202,81 +1203,57 @@ int i2600_device_gone(void) { return dev_gone; }
 /* ------------------------------------------------- waiting for the device */
 
 /*
- * Nothing to do but wake the event loop, which then retries the open --
- * that retry, not this callback, is what decides the device is usable.
- * Returning 0 keeps the callback registered for a second arrival.
- */
-static int LIBUSB_CALL on_arrival(libusb_context *c, libusb_device *d,
-				  libusb_hotplug_event e, void *user)
-{
-	(void)c; (void)d; (void)e; (void)user;
-	return 0;
-}
-
-/*
  * Block until the scanner is there and can actually be opened.
  *
- * Two things have to line up, and only the second one proves it: the device
- * must be on the bus, and udev's uaccess rule must have put the ACL on its
- * node (section 3).  Hotplug fires from libusb's own udev monitor and can
- * beat that ACL, so arrival is not enough -- the test is an open that
- * succeeds, retried for a few seconds.
+ * This used to sleep on a libusb hotplug callback and retry the open in
+ * between.  In a container both halves are useless.  libusb is linked
+ * against libudev, and an unprivileged LXC guest runs no udev at all, so
+ * the hotplug monitor never fires -- and, the part that actually bites, a
+ * context's device list is built by libusb_init() and from then on only
+ * updated by those same events.  A context created while the scanner was
+ * switched off therefore never sees it return, however often the open is
+ * retried against it.  The paperless daemon sat waiting like that for ten
+ * days with the device node right in front of it.
  *
- * Without this a daemon can only exit and be restarted on a timer, which
- * means up to RestartSec of dead time after someone flips the power switch.
+ * So build a fresh context for every attempt.  That costs a sysfs scan
+ * twice a second in a process that is otherwise idle, and it works with
+ * udev and without.
+ *
+ * An open that succeeds is also the proof we want on a desktop, where the
+ * device is on the bus a moment before udev's uaccess rule has put the ACL
+ * on its node (section 3): arrival alone would be too early.
  *
  * Returns 0 once the device is openable, -1 on timeout (timeout_s 0 waits
- * forever) or when the wait itself failed.
+ * forever) or once i2600_abort_wait is set -- a front end sets that from
+ * its signal handler, so that a SIGTERM during the wait is not ignored
+ * until systemd loses patience and sends SIGKILL.
  */
+volatile sig_atomic_t i2600_abort_wait;
+
 int i2600_wait_for_device(unsigned timeout_s)
 {
-	libusb_context *ctx = NULL;
-	libusb_hotplug_callback_handle cb;
 	double deadline = timeout_s ? now_s() + timeout_s : 0;
-	int have_hotplug, registered = 0, rc = -1;
-
-	if (libusb_init(&ctx) < 0)
-		return -1;
-	have_hotplug = libusb_has_capability(LIBUSB_CAP_HAS_HOTPLUG) != 0;
-	if (have_hotplug
-	    && libusb_hotplug_register_callback(ctx,
-			LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED,
-			LIBUSB_HOTPLUG_NO_FLAGS, KODAK_VID, I2600_PID,
-			LIBUSB_HOTPLUG_MATCH_ANY, on_arrival, NULL, &cb) == 0)
-		registered = 1;
-	else
-		have_hotplug = 0;
 
 	for (;;) {
-		libusb_device_handle *h =
-			libusb_open_device_with_vid_pid(ctx, KODAK_VID, I2600_PID);
+		libusb_context *ctx = NULL;
+		libusb_device_handle *h;
 
-		if (h) {                       /* on the bus and ours to use */
+		if (libusb_init(&ctx) < 0)
+			return -1;
+		h = libusb_open_device_with_vid_pid(ctx, KODAK_VID, I2600_PID);
+		if (h) {
 			libusb_close(h);
-			rc = 0;
-			break;
+			libusb_exit(ctx);
+			return 0;
 		}
+		libusb_exit(ctx);
+
+		if (i2600_abort_wait)
+			return -1;
 		if (deadline && now_s() >= deadline)
-			break;
-
-		if (have_hotplug) {
-			/*
-			 * Sleep in libusb until something arrives.  The one
-			 * second cap covers the ACL race: the callback may
-			 * have fired already while the node was still
-			 * root-only, so keep retrying the open regardless.
-			 */
-			struct timeval tv = { 1, 0 };
-			libusb_handle_events_timeout_completed(ctx, &tv, NULL);
-		} else {
-			msleep(300);
-		}
+			return -1;
+		msleep(500);
 	}
-
-	if (registered)
-		libusb_hotplug_deregister_callback(ctx, cb);
-	libusb_exit(ctx);
-	return rc;
 }
 
 int i2600_power_saver(int on)

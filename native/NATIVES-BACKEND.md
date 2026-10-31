@@ -2486,3 +2486,62 @@ geraten wird hier nichts, weil der letzte Schritt in den Flash geht.
    jetzt grauer, und ob das der Erkennung schadet, ist nicht gemessen **[?]**.
 5. `mono` installieren und eine Bildkalibrierung über `twaingui` mitschneiden
    — erst dann lässt sich die Neuberechnung nachbauen.
+
+---
+
+## 18. Im Container wartet libusb ewig **[M][E]**
+
+Der paperless-Dienst stand nach zehn Tagen still: Der Scanner war
+eingeschaltet, sein Knoten lag mit richtigen Rechten in `/dev/bus/usb`, der
+Prozess lief — und hat ihn nie bemerkt. Im Display blieb die `0`, also kalt,
+weil niemand die Firmware lud.
+
+### Warum **[M]**
+
+Zwei Messungen am Container, zusammen ergeben sie die Erklärung:
+
+```
+/run/udev                 existiert nicht
+systemd-udevd             inactive
+ldd libusb-1.0.so.0       libudev.so.1 => /lib/x86_64-linux-gnu/libudev.so.1
+lsusb -d 040a:601d        Bus 003 Device 013: ID 040a:601d  i2600 SCANNER
+```
+
+libusb bezieht Hotplug über libudev. Ein unprivilegierter LXC-Gast führt
+**kein udev**, also feuert die Benachrichtigung nie. Das allein wäre
+verschmerzbar — die Warteschleife rief ohnehin jede Sekunde
+`libusb_open_device_with_vid_pid`. Entscheidend ist das Zweite: Die
+**Geräteliste eines Kontexts entsteht bei `libusb_init()`** und wird danach
+nur über eben diese Ereignisse fortgeschrieben. Ein Kontext, der angelegt
+wurde, während der Scanner aus war, sieht ihn nie wieder — gleich wie oft
+man ihn fragt. Dass `lsusb` das Gerät findet, beweist es: Das startet libusb
+neu.
+
+### Die Behebung **[E]**
+
+`i2600_wait_for_device()` legt für **jeden** Versuch einen frischen Kontext
+an und verwirft ihn wieder. Das kostet zweimal pro Sekunde einen
+sysfs-Durchlauf in einem sonst untätigen Prozess und wirkt mit udev wie ohne.
+Der Hotplug-Pfad ist ersatzlos entfallen; er war auf dem Arbeitsplatz eine
+Bequemlichkeit und im Container eine Falle.
+
+### Der zweite Fehler, den derselbe Vorfall zeigte **[M]**
+
+Der festhängende Prozess beantwortete auch `SIGTERM` nicht:
+
+```
+14:30:54  Stopping i2600-scand.service ...
+14:32:24  State 'stop-sigterm' timed out. Killing.
+14:32:24  Killing process 2952 (i2600-scand) with signal SIGKILL
+```
+
+Neunzig Sekunden, dann der Abschuss. Die Warteschleife im Kern kannte das
+`stop_requested` des Dienstes nicht. Jetzt setzt dessen Signalbehandlung
+zusätzlich `i2600_abort_wait`, das die Schleife prüft; gemessener Neustart
+danach: **1 Sekunde**.
+
+### Was daraus folgt **[?]**
+
+Jede lang laufende libusb-Anwendung in einem Container hat dieses Problem,
+nicht nur diese. Wer dort auf ein USB-Gerät wartet, darf sich auf einen
+einmal angelegten Kontext nicht verlassen.

@@ -62,7 +62,14 @@ static int   verbose          = 0;
 static unsigned char panel_ready[I2600_LCD_BYTES];
 static unsigned screens_seen;
 
-static void on_signal(int sig) { (void)sig; stop_requested = 1; }
+static void on_signal(int sig)
+{
+	(void)sig;
+	stop_requested = 1;
+	/* Also break a wait for the scanner, or a SIGTERM there goes
+	 * unanswered until systemd gives up and sends SIGKILL. */
+	i2600_abort_wait = 1;
+}
 
 static void say(const char *fmt, ...)
 {
